@@ -1,0 +1,24 @@
+
+# for loop
+snippet for
+for (let ${2:i} = 0, l = ${1:arr}.length; $2 < l; $2++) {
+	let ${3:v} = $1[$2];${0:}
+}
+endsnippet
+
+# Reversed for loop
+snippet forr
+for (let ${2:i} = ${1:arr}.length - 1; $2 >= 0; $2--) {
+	let ${3:v} = $1[$2];${0:}
+}
+endsnippet
+
+# For in loop
+snippet fori
+for (let ${1:prop} in ${2:object}) {
+	if (Object.hasOwnProperty($2)) {
+		${0:$2[$1]}
+	}
+}
+endsnippet
+
