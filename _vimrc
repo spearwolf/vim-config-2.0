@@ -6,9 +6,14 @@ runtime! rc.d/wildignore.vim
 runtime! rc.d/neocomplete.vim
 runtime! rc.d/nerdtree.vim
 runtime! rc.d/ctrlp.vim
+runtime! rc.d/snippets.vim
 
 " ===== Vim-Plug ==========-==---=---=---- ----- --  -
 call plug#begin('~/.vim/plugged')
+
+" snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " features
 Plug 'tpope/vim-sensible'
@@ -20,6 +25,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'godlygeek/tabular'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'moll/vim-node'
 
 " languages
 Plug 'sheerun/vim-polyglot'

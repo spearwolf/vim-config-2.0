@@ -1,5 +1,5 @@
 
-" Textmate(ruby) like insert '=>'
+" Textmate(ruby) like insert '=>' and '->'
 imap <silent> <C-l> =>
 imap <silent> <C-k> ->
 
@@ -7,11 +7,11 @@ imap <silent> <C-k> ->
 vmap <silent> <M-Up> :m'<-2<CR>gv
 vmap <silent> <M-Down> :m'>+1<CR>gv
 
-" Jump into tags (and <Alt-Left> to go back)
-map <silent> <M-Down> <C-]>
+" <M-Right> Jump into tag (and <M-Left> to go back)
+map <silent> <M-Right> <C-]>
 map <silent> <M-Left> <C-T>
 
-" NERD_Commenter
+" <C-x> NERD_Commenter
 map <silent> <C-x> <Leader>ci
 
 " <F2> NERD tree
