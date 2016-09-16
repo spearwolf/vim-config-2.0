@@ -3,10 +3,6 @@
 
 runtime! rc.d/general.vim
 runtime! rc.d/wildignore.vim
-runtime! rc.d/neocomplete.vim
-runtime! rc.d/nerdtree.vim
-runtime! rc.d/ctrlp.vim
-runtime! rc.d/snippets.vim
 
 " ===== Vim-Plug ==========-==---=---=---- ----- --  -
 call plug#begin('~/.vim/plugged')
@@ -38,6 +34,10 @@ Plug 'fmoralesc/molokayo'
 call plug#end()
 " - -- ----------------------------------- ----- --  -
 
+runtime! rc.d/neocomplete.vim
+runtime! rc.d/nerdtree.vim
+runtime! rc.d/ctrlp.vim
+runtime! rc.d/snippets.vim
 runtime! rc.d/syntax.vim
 runtime! rc.d/quickfix.vim
 runtime! rc.d/last-cursor-position.vim
