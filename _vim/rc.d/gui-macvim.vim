@@ -26,10 +26,14 @@ set lines=33 columns=142
 "set background=dark
 "colorscheme molokayo
 "colorscheme zeroOne-Dark
+"colorscheme OceanicNext
+"colorscheme PaperColor
+"colorscheme base16-tomorrow-night
 
 " #==--- light colorschemes ------- --  -
 set background=light
+"colorscheme snowcrystal
 "colorscheme zeroOne-Light
 "colorscheme zeroOne-LightComic
-colorscheme snowcrystal
+colorscheme PaperColor
 
