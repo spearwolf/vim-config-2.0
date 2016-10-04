@@ -66,6 +66,7 @@ runtime! rc.d/last-cursor-position.vim
 runtime! rc.d/remove-trailing-whitespaces.vim
 runtime! rc.d/key-mappings.vim
 runtime! rc.d/syntastic.vim
+runtime! rc.d/jsx.vim
 
 if has("gui_running")
 
