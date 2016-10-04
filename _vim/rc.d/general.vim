@@ -43,6 +43,7 @@ set ttyfast
 " Fillchars
 set fillchars+=vert:◦
 "║│░•◆▲▫︎◦
+set list listchars=tab:»·,trail:·
 
 " Turn on the mouse, since it doesn't play well with tmux anyway. This way I can
 " scroll in the terminal
@@ -83,4 +84,7 @@ set tm=500
 set laststatus=2
 
 let mapleader = "´"
+
+" Stop Vim dying if there's massively long lines.
+set synmaxcol=500
 

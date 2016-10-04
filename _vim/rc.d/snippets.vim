@@ -1,4 +1,6 @@
 
+let g:UltiSnipsExpandTrigger= "<c-k>"
+
 let g:UltiSnipsSnippetDirectories = [ 'UltiSnips', 'my-snippets' ]
 
 "=> https://github.com/SirVer/ultisnips/issues/519
@@ -37,7 +39,7 @@ snoremap <buffer> <silent> <S-TAB>
 
 " inoremap <CR> {{{1
 " expand snippet, close menu or insert newline
-let g:UltiSnipsExpandTrigger = "<NOP>"
+"let g:UltiSnipsExpandTrigger = "<NOP>"
 let g:ulti_expand_or_jump_res = 0
 inoremap <silent> <CR> <C-r>=<SID>ExpandSnippetOrReturnEmptyString()<CR>
 function! s:ExpandSnippetOrReturnEmptyString()

@@ -1,6 +1,7 @@
 
 " #==--- dark colorschemes ------- --  -
 set background=dark
-colorscheme molokayo
+"colorscheme molokayo
 "colorscheme zeroOne-Dark
+colorscheme spacegray
 

@@ -25,9 +25,21 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'moll/vim-node'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'gorkunov/smartpairs.vim'
 
 " languages
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-git'
+Plug 'vim-ruby/vim-ruby'
+Plug 'moll/vim-node'
+Plug 'pangloss/vim-javascript', { 'branch': 'develop' }
+Plug 'othree/html5.vim'
+Plug 'leshill/vim-json'
+Plug 'tpope/vim-markdown'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
 
 " colorschemes
 Plug 'morhetz/gruvbox'
@@ -39,6 +51,7 @@ Plug 'MaxSt/FlatColor'
 Plug 'chriskempson/base16-vim'
 Plug 'goatslacker/mango.vim'
 Plug 'KabbAmine/yowish.vim'
+Plug 'ajh17/Spacegray.vim'
 
 call plug#end()
 " - -- ----------------------------------- ----- --  -
