@@ -41,8 +41,12 @@ let s:comment_bg_inner  = { "gui": "#103030" }
 let s:search_fg         = { "gui": "#000000" }
 let s:search_bg         = { "gui": "#e0e060" }
 
+let s:js_modules        = { "gui": "#DF6936" }
+let s:js_modules_bg     = { "gui": "#3F2900" }
+
 let s:cursor            = { "gui": "#443311" }
 let s:cursor_bg         = { "gui": "#FF9966" }
+let s:cursor_yello      = { "gui": "#FFEEAA" }
 let s:visual            = { "gui": "#102060" }
 let s:todo              = { "gui": "#ffffff" }
 " TODO publish this colortheme
@@ -62,7 +66,8 @@ endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Identifier",    {"bg": s:bg, "fg": s:identifier, "gui": "bold"})
-call s:h("Cursor",        {"bg": s:cursor_bg, "fg": s:cursor })
+"call s:h("Cursor",        {"bg": s:cursor_bg, "fg": s:cursor })
+call s:h("Cursor",        {"bg": s:cursor_yello, "fg": s:cursor })
 
 call s:h("Comment",       {"fg": s:comment, "bg": s:comment_bg, "gui": "italic"})
 
@@ -117,7 +122,8 @@ call s:h("CursorLineNr",  {"fg": s:blue, "bg": s:bg_b})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_b})
 call s:h("StatusLineNC",  {"bg": s:bg_b, "fg": s:not_norm})
-call s:h("VertSplit",     {"bg": s:bg_b, "fg": s:bg_b})
+"call s:h("VertSplit",     {"bg": s:bg_b, "fg": s:bg_b})
+call s:h("VertSplit",     {"bg": s:bg, "fg": s:bg_b})
 call s:h("Title",         {"fg": s:blue_dark})
 call s:h("Visual",        {"bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_c})
@@ -179,8 +185,12 @@ hi link jsOperator                  Normal
 hi link jsHtmlElemAttrs             Normal
 
 call s:h("jsModules",        {"fg": s:red, "gui": "bold"})
+call s:h("jsModuleKeywords", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
 call s:h("jsDocTags",        {"fg": s:comment, "bg": s:comment_bg, "gui": "bold"})
 call s:h("jsDocType",        {"fg": s:comment, "bg": s:comment_bg})
 call s:h("jsDocParam",       {"fg": s:comment, "bg": s:comment_bg_inner})
 call s:h("jsDocTypeNoParam", {"fg": s:comment, "bg": s:comment_bg})
+
+call s:h("NERDTreeOpenable", {"fg": s:red})
+call s:h("NERDTreeClosable", {"fg": s:red})
 

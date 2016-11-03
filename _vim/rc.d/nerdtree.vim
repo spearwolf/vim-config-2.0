@@ -1,8 +1,9 @@
 " NERDTree settings
 
-let g:NERDTreeWinPos        = "right"
-let g:NERDTreeShowBookmarks = 0
-let g:NERDTreeStatusLine    = 1
+let g:NERDTreeWinPos            = "right"
+let g:NERDTreeShowBookmarks     = 0
+let g:NERDTreeStatusLine        = 1
+let g:NERDTreeRespectWildIgnore = 1
 
 let g:NERDTreeDirArrowExpandable  = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'

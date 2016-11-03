@@ -52,6 +52,11 @@ Plug 'chriskempson/base16-vim'
 Plug 'goatslacker/mango.vim'
 Plug 'KabbAmine/yowish.vim'
 Plug 'ajh17/Spacegray.vim'
+Plug 'jacoborus/tender.vim'
+Plug 'google/vim-colorscheme-primary'
+Plug 'rakr/vim-one'
+Plug 'AlessandroYorba/Sierra'
+
 
 call plug#end()
 " - -- ----------------------------------- ----- --  -
@@ -66,6 +71,7 @@ runtime! rc.d/last-cursor-position.vim
 runtime! rc.d/remove-trailing-whitespaces.vim
 runtime! rc.d/key-mappings.vim
 runtime! rc.d/syntastic.vim
+runtime! rc.d/complete.vim
 runtime! rc.d/jsx.vim
 
 if has("gui_running")

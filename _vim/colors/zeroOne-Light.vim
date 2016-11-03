@@ -27,7 +27,7 @@ let s:bg_a              = { "gui": "#F1F1F1" }
 let s:bg_b              = { "gui": "#E0E0E0" }
 let s:bg_c              = { "gui": "#B2B2B2" }
 
-let s:norm              = { "gui": "#424242" }
+let s:norm              = { "gui": "#646464" }
 let s:not_norm          = { "gui": "#767676" }
 let s:statement         = { "gui": "#506080" }
 let s:identifier        = { "gui": "#000000" }
@@ -44,6 +44,9 @@ let s:visual            = { "gui": "#c6e6ff" }
 let s:search_bg         = { "gui": "#f2f252" }
 let s:todo_fg           = { "gui": "#306090" }
 let s:todo              = { "gui": "#90c0f0" }
+
+let s:js_modules        = { "gui": "#DF6936" }
+let s:js_modules_bg     = { "gui": "#FFF3E6" }
 
 " =====================-==---=--------------- --   -  -
 
@@ -115,7 +118,7 @@ call s:h("CursorLineNr",  {"fg": s:blue, "bg": s:bg_b})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_b})
 call s:h("StatusLineNC",  {"bg": s:bg_b, "fg": s:not_norm})
-call s:h("VertSplit",     {"bg": s:bg_b, "fg": s:bg_b})
+call s:h("VertSplit",     {"fg": s:bg_b})
 call s:h("Title",         {"fg": s:blue_dark})
 call s:h("Visual",        {"bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_c})
@@ -177,8 +180,12 @@ hi link jsOperator                  Normal
 hi link jsHtmlElemAttrs             Normal
 
 call s:h("jsModules",        {"fg": s:red, "gui": "bold"})
+call s:h("jsModuleKeywords", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
 call s:h("jsDocTags",        {"fg": s:comment, "bg": s:comment_bg, "gui": "bold"})
 call s:h("jsDocType",        {"fg": s:comment, "bg": s:comment_bg})
 call s:h("jsDocParam",       {"fg": s:comment, "bg": s:comment_bg_inner})
 call s:h("jsDocTypeNoParam", {"fg": s:comment, "bg": s:comment_bg})
+
+call s:h("NERDTreeOpenable", {"fg": s:red})
+call s:h("NERDTreeClosable", {"fg": s:red})
 

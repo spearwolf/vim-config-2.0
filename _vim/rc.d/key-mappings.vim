@@ -1,7 +1,8 @@
 
 " Textmate(ruby) like insert '=>' and '->'
 imap <silent> <C-l> =>
-imap <silent> <C-k> ->
+" Replaced by ultisnippets:
+"imap <silent> <C-k> ->
 
 " Move complete block one line down or up with <M-Down> and <M-Up> keys
 vmap <silent> <M-Up> :m'<-2<CR>gv
