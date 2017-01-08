@@ -8,14 +8,15 @@ let macvim_skip_cmd_opt_movement=1
 map <silent> <C-M-Left> gT
 map <silent> <C-M-Right> gt
 
-"set guifont=Fira\ Mono\ Medium\ for\ Powerline:h14
-set guifont=Roboto\ Mono:h14
+set guifont=Fura\ Mono\ Medium\ for\ Powerline:h14
+"set guifont=Roboto\ Mono:h14
 set linespace=1
 
 let g:enable_bold_font = 1
 
-set transparency=6
-set blurradius=3
+"set transparency=6
+set transparency=2
+"set blurradius=3
 
 "set lines=37 columns=140
 "set lines=42 columns=128
@@ -24,7 +25,7 @@ set lines=32 columns=144
 
 
 " #==--- dark colorschemes ------- --  -
-"set background=dark
+set background=dark
 "colorscheme molokayo
 "colorscheme zeroOne-Dark
 "colorscheme OceanicNext
@@ -33,15 +34,40 @@ set lines=32 columns=144
 "colorscheme spacegray
 "colorscheme tender
 
-let g:sierra_Twilight = 1
+"let g:sierra_Twilight = 1
 let g:sierra_Nevada = 1
-colorscheme sierra
+"colorscheme sierra
+
+"let g:despacio_Sunset = 1 "medium gray background
+"let g:despacio_Twilight = 1 "dark gray background
+"let g:despacio_Midnight = 1 "almost black background
+"let g:despacio_Pitch = 1 "black background
+let g:despacio_Campfire = 1 "Changes theme depending on time of day
+"colorscheme despacio
+
+"let g:alduin_Shout_Become_Ethereal = 1 "black background
+"let g:alduin_Contract_Vampirism = 1 "gray to black @ 5p
+let g:alduin_Shout_Aura_Whisper = 1 "underline matching parens
+let g:alduin_Shout_Fire_Breath = 1 "adds dark red color
+"let g:alduin_Shout_Animal_Allegiance = 1 "removes background from Strings
+"let g:alduin_Shout_Clear_Skies = 1 "removes cursorline
+colorscheme alduin
+
+"colorscheme Apprentice
+"colorscheme fruity
+"colorscheme scheakur
+"colorscheme nova
+"colorscheme goldenrod
+"colorscheme moonshine
+"colorscheme flatlandia
 
 " #==--- light colorschemes ------- --  -
-set background=light
+"set background=light
 "colorscheme snowcrystal
 "colorscheme zeroOne-Light
 "colorscheme zeroOne-LightComic
 "colorscheme PaperColor
-colorscheme one
+"colorscheme one
+
+"let g:airline_theme = 'light'
 

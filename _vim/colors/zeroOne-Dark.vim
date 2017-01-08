@@ -66,7 +66,6 @@ endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Identifier",    {"bg": s:bg, "fg": s:identifier, "gui": "bold"})
-"call s:h("Cursor",        {"bg": s:cursor_bg, "fg": s:cursor })
 call s:h("Cursor",        {"bg": s:cursor_yello, "fg": s:cursor })
 
 call s:h("Comment",       {"fg": s:comment, "bg": s:comment_bg, "gui": "italic"})
@@ -122,7 +121,6 @@ call s:h("CursorLineNr",  {"fg": s:blue, "bg": s:bg_b})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_b})
 call s:h("StatusLineNC",  {"bg": s:bg_b, "fg": s:not_norm})
-"call s:h("VertSplit",     {"bg": s:bg_b, "fg": s:bg_b})
 call s:h("VertSplit",     {"bg": s:bg, "fg": s:bg_b})
 call s:h("Title",         {"fg": s:blue_dark})
 call s:h("Visual",        {"bg": s:visual})
@@ -184,13 +182,55 @@ hi link jsArrowFunction             Statement
 hi link jsOperator                  Normal
 hi link jsHtmlElemAttrs             Normal
 
+call s:h("jsSuper",                 {"bg": s:black, "fg": s:statement, "gui": "bold"})
+call s:h("jsClassKeywords",         {"bg": s:black, "fg": s:statement, "gui": "bold"})
+
+call s:h("xmlString",               {"bg": s:black, "fg": { "gui": "#ffaa33" }})
+hi link xmlTagName                  Identifier
+hi link xmlEndTag                   Identifier
+hi link xmlAttribPunct              Normal
+
+hi link htmlTagName                 Statement
+hi link htmlTag                     Statement
+call s:h("htmlTagN",                {"fg": { "gui": "#304060" }, "bg": s:black, "gui": "bold"})
+hi link htmlEndTag                  Statement
+hi link htmlArg                     Statement
+hi link htmlString                  String
+
+hi link lessClass                   Statement
+hi link lessCharClass               Statement
+hi link lessDefinition              Statement
+
+call s:h("lessInclude",         {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
+call s:h("cssStringQ",          {"bg": s:js_modules_bg, "fg": { "gui": "#cc2166" }})
+call s:h("lessAmpersand",       {"fg": { "gui": "#304060" }, "bg": s:black, "gui": "bold"})
+
+call s:h("cssCommonAttr",       {"bg": s:black, "fg": { "gui": "#fffff0" }})
+call s:h("cssTextAttr",         {"bg": s:black, "fg": { "gui": "#fffff0" }})
+call s:h("cssPositioningAttr",  {"bg": s:black, "fg": { "gui": "#ffaa33" }})
+
+call s:h("cssUnitDecorators",   {"bg": s:black, "fg": { "gui": "#a00060" }})
+call s:h("cssColor",            {"bg": s:black, "fg": { "gui": "#f000a0" }})
+
 call s:h("jsModules",        {"fg": s:red, "gui": "bold"})
 call s:h("jsModuleKeywords", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
+call s:h("jsModuleOperators",{"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
+
+call s:h("jsObjectKey",      {"fg": { "gui": "#e6e6e6" }, "bg": { "gui": "#303030" }, "gui": "bold"})
+call s:h("jsFunctionKey",    {"fg": { "gui": "#e6e6e6" }, "bg": { "gui": "#303030" }, "gui": "bold"})
+
 call s:h("jsDocTags",        {"fg": s:comment, "bg": s:comment_bg, "gui": "bold"})
 call s:h("jsDocType",        {"fg": s:comment, "bg": s:comment_bg})
 call s:h("jsDocParam",       {"fg": s:comment, "bg": s:comment_bg_inner})
 call s:h("jsDocTypeNoParam", {"fg": s:comment, "bg": s:comment_bg})
 
+"call s:h("jsGlobalNodeObjects", {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
+call s:h("jsGlobalNodeObjects", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
+call s:h("jsImportContainer",   {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
+call s:h("jsModuleGroup",       {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
+
 call s:h("NERDTreeOpenable", {"fg": s:red})
 call s:h("NERDTreeClosable", {"fg": s:red})
+call s:h("NERDTreeCWD",      {"fg": { "gui": "#304060" }, "bg": s:black, "gui": "bold"})
+hi link NERDTreeDir          Statement
 

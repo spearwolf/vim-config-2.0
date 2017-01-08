@@ -27,6 +27,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'gorkunov/smartpairs.vim'
+Plug 'mattn/emmet-vim'
 
 " languages
 "Plug 'sheerun/vim-polyglot'
@@ -59,6 +60,17 @@ Plug 'rakr/vim-one'
 Plug 'AlessandroYorba/Sierra'
 Plug 'altercation/vim-colors-solarized'
 
+Plug 'romainl/Apprentice'
+Plug 'mitsuhiko/fruity-vim-colorscheme'
+Plug 'scheakur/vim-scheakur'
+Plug 'zanglg/nova.vim'
+Plug 'acoustichero/goldenrod.vim'
+Plug 'kamwitsta/nordisk'
+Plug 'KKPMW/moonshine-vim'
+Plug 'AlessandroYorba/Alduin'
+Plug 'AlessandroYorba/Despacio'
+Plug 'jordwalke/flatlandia'
+
 
 call plug#end()
 " - -- ----------------------------------- ----- --  -
@@ -75,6 +87,7 @@ runtime! rc.d/key-mappings.vim
 runtime! rc.d/syntastic.vim
 runtime! rc.d/complete.vim
 runtime! rc.d/jsx.vim
+runtime! rc.d/airline.vim
 
 if has("gui_running")
 
