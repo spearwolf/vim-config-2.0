@@ -40,6 +40,7 @@ Plug 'tpope/vim-markdown'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'digitaltoad/vim-pug'
 
 " colorschemes
 Plug 'morhetz/gruvbox'
@@ -56,6 +57,7 @@ Plug 'jacoborus/tender.vim'
 Plug 'google/vim-colorscheme-primary'
 Plug 'rakr/vim-one'
 Plug 'AlessandroYorba/Sierra'
+Plug 'altercation/vim-colors-solarized'
 
 
 call plug#end()
@@ -78,8 +80,9 @@ if has("gui_running")
 
     runtime! rc.d/gui.vim
 
-    "if has("gui_gtk2")
-    "endif
+    if has("gui_gtk2")
+        runtime! rc.d/gui-linux.vim
+    endif
 
     if has("gui_macvim")
         runtime! rc.d/gui-macvim.vim
