@@ -1,5 +1,5 @@
-" --- vim-colorscheme -=* zeroOne-Light *=- ----- --- --  -
-" Created 2016 by wolfger@spearwolf.de
+" --- vim-colorscheme -=* zeroOne-Dark *=- ----- --- --  -
+" Created 2016-17 by wolfger@spearwolf.de
 " --------------------------------------- --- --  -
 
 hi clear
@@ -31,24 +31,29 @@ let s:norm              = { "gui": "#C6C6C6" }
 let s:not_norm          = { "gui": "#B0B2B6" }
 let s:statement         = { "gui": "#607090" }
 let s:identifier        = { "gui": "#ecece8" }
-let s:constant          = { "gui": "#F000A0" }
-let s:string            = { "gui": "#B32561" }
+let s:constant          = { "gui": "#ffaa33" }
+
+"let s:string            = { "gui": "#B32561" }
+let s:string            = { "gui": "#D33551" }
 
 let s:comment           = { "gui": "#42a282" }
 let s:comment_bg        = { "gui": "#183838" }
 let s:comment_bg_inner  = { "gui": "#103030" }
 
-let s:search_fg         = { "gui": "#000000" }
-let s:search_bg         = { "gui": "#e0e060" }
+let s:search_fg         = { "gui": "#553311" }
+let s:search_bg         = { "gui": "#ffffa0" }
 
 let s:js_modules        = { "gui": "#DF6936" }
 let s:js_modules_bg     = { "gui": "#3F2900" }
 
-let s:cursor            = { "gui": "#443311" }
-let s:cursor_bg         = { "gui": "#FF9966" }
-let s:cursor_yello      = { "gui": "#FFEEAA" }
-let s:visual            = { "gui": "#102060" }
+let s:cursor_bg         = { "gui": "#00ee66" }
+let s:cursor_fg         = { "gui": "#336699" }
+
+let s:visual_bg         = { "gui": "#2266aa" }
+let s:visual_fg         = { "gui": "#e0f0ff" }
+
 let s:todo              = { "gui": "#ffffff" }
+
 " TODO publish this colortheme
 
 " =====================-==---=--------------- --   -  -
@@ -66,11 +71,12 @@ endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Identifier",    {"bg": s:bg, "fg": s:identifier, "gui": "bold"})
-call s:h("Cursor",        {"bg": s:cursor_yello, "fg": s:cursor })
+call s:h("Cursor",        {"bg": s:cursor_bg, "fg": s:cursor_fg })
 
 call s:h("Comment",       {"fg": s:comment, "bg": s:comment_bg, "gui": "italic"})
 
-call s:h("Constant",      {"bg": s:black, "fg": s:constant})
+"call s:h("Constant",      {"bg": s:black, "fg": s:constant})
+call s:h("Constant",      {"fg": s:constant})
 hi! link Character        Constant
 hi! link Number           Constant
 hi! link Boolean          Constant
@@ -123,7 +129,7 @@ call s:h("StatusLine",    {"bg": s:bg_b})
 call s:h("StatusLineNC",  {"bg": s:bg_b, "fg": s:not_norm})
 call s:h("VertSplit",     {"bg": s:bg, "fg": s:bg_b})
 call s:h("Title",         {"fg": s:blue_dark})
-call s:h("Visual",        {"bg": s:visual})
+call s:h("Visual",        {"bg": s:visual_bg, "fg": s:visual_fg})
 call s:h("VisualNOS",     {"bg": s:bg_c})
 call s:h("WarningMsg",    {"fg": s:red})
 call s:h("WildMenu",      {"fg": s:bg, "bg": s:norm})
@@ -155,11 +161,13 @@ call s:h("TabLine",       {"fg": s:norm, "bg": s:bg_b})
 call s:h("TabLineSel",    {"fg": s:blue, "bg": s:bg_c, "gui": "bold", "cterm": "bold"})
 call s:h("TabLineFill",   {"fg": s:norm, "bg": s:bg_b})
 call s:h("CursorColumn",  {"bg": s:bg_b})
-call s:h("CursorLine",    {"bg": s:bg_b})
+call s:h("CursorLine",    {"bg": s:black})
 call s:h("ColorColumn",   {"bg": s:bg_c})
 
 call s:h("MatchParen",    {"bg": s:bg_c, "fg": s:norm})
 call s:h("qfLineNr",      {"fg": s:not_norm})
+
+hi link vimLineComment Comment
 
 call s:h("htmlH1",        {"bg": s:bg, "fg": s:norm})
 call s:h("htmlH2",        {"bg": s:bg, "fg": s:norm})
@@ -176,14 +184,35 @@ hi link GitGutterDelete             LineNr
 hi link GitGutterChange             LineNr
 hi link GitGutterChangeDelete       LineNr
 
-hi link jsStorageClass              Statement
-hi link jsFunction                  Statement
 hi link jsArrowFunction             Statement
-hi link jsOperator                  Normal
+hi link jsFunction                  Statement
 hi link jsHtmlElemAttrs             Normal
-
-call s:h("jsSuper",                 {"bg": s:black, "fg": s:statement, "gui": "bold"})
+hi link jsOperator                  Normal
+hi link jsStorageClass              Statement
+call s:h("jsBooleanFalse",          {"fg": { "gui": "#DF6936" }})
+call s:h("jsBooleanTrue",           {"fg": { "gui": "#DF6936" }})
+call s:h("jsBracket",               {"fg": { "gui": "#a4a4a4" }})
 call s:h("jsClassKeywords",         {"bg": s:black, "fg": s:statement, "gui": "bold"})
+call s:h("jsDocParam",              {"fg": s:comment, "bg": s:comment_bg_inner})
+call s:h("jsDocTags",               {"fg": s:comment, "bg": s:comment_bg, "gui": "bold"})
+call s:h("jsDocType",               {"fg": s:comment, "bg": s:comment_bg})
+call s:h("jsDocTypeNoParam",        {"fg": s:comment, "bg": s:comment_bg})
+call s:h("jsFuncArgs",              {"fg": { "gui": "#ffffff" }})
+call s:h("jsFunctionKey",           {"fg": { "gui": "#e6e6e6" }, "bg": { "gui": "#303030" }, "gui": "bold"})
+call s:h("jsGlobalNodeObjects",     {"fg": { "gui": "#ffaa33" }, "bg": { "gui": "#242420" }, "gui": "bold" })
+call s:h("jsImport",                {"fg": s:pink, "gui": "bold" })
+call s:h("jsFrom",                  {"fg": s:pink, "gui": "bold" })
+call s:h("jsExport",                {"fg": s:pink, "gui": "bold" })
+call s:h("jsExportDefault",         {"fg": s:pink, "gui": "bold" })
+call s:h("jsImportContainer",       {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
+"call s:h("jsModuleGroup",           {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
+call s:h("jsModuleKeywords",        {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
+call s:h("jsModuleOperators",       {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
+call s:h("jsModules",               {"fg": s:red, "gui": "bold"})
+call s:h("jsNumber",                {"fg": { "gui": "#DF6936" }})
+call s:h("jsObjectKey",             {"fg": { "gui": "#a4a4a4" }})
+call s:h("jsObjectKeyComputed",     {"fg": { "gui": "#a4a4a4" }})
+call s:h("jsSuper",                 {"bg": s:black, "fg": s:statement, "gui": "bold"})
 
 call s:h("xmlString",               {"bg": s:black, "fg": { "gui": "#ffaa33" }})
 hi link xmlTagName                  Identifier
@@ -198,6 +227,7 @@ hi link htmlArg                     Statement
 hi link htmlString                  String
 
 hi link lessClass                   Statement
+hi link cssTagName                  Statement
 hi link lessCharClass               Statement
 hi link lessDefinition              Statement
 
@@ -209,25 +239,13 @@ call s:h("cssCommonAttr",       {"bg": s:black, "fg": { "gui": "#fffff0" }})
 call s:h("cssTextAttr",         {"bg": s:black, "fg": { "gui": "#fffff0" }})
 call s:h("cssPositioningAttr",  {"bg": s:black, "fg": { "gui": "#ffaa33" }})
 
+call s:h("cssValueLength",      {"bg": s:black, "fg": { "gui": "#ffaa33" }})
+call s:h("cssValueNumber",      {"bg": s:black, "fg": { "gui": "#ffaa33" }})
 call s:h("cssUnitDecorators",   {"bg": s:black, "fg": { "gui": "#a00060" }})
 call s:h("cssColor",            {"bg": s:black, "fg": { "gui": "#f000a0" }})
-
-call s:h("jsModules",        {"fg": s:red, "gui": "bold"})
-call s:h("jsModuleKeywords", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
-call s:h("jsModuleOperators",{"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
-
-call s:h("jsObjectKey",      {"fg": { "gui": "#e6e6e6" }, "bg": { "gui": "#303030" }, "gui": "bold"})
-call s:h("jsFunctionKey",    {"fg": { "gui": "#e6e6e6" }, "bg": { "gui": "#303030" }, "gui": "bold"})
-
-call s:h("jsDocTags",        {"fg": s:comment, "bg": s:comment_bg, "gui": "bold"})
-call s:h("jsDocType",        {"fg": s:comment, "bg": s:comment_bg})
-call s:h("jsDocParam",       {"fg": s:comment, "bg": s:comment_bg_inner})
-call s:h("jsDocTypeNoParam", {"fg": s:comment, "bg": s:comment_bg})
-
-"call s:h("jsGlobalNodeObjects", {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
-call s:h("jsGlobalNodeObjects", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
-call s:h("jsImportContainer",   {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
-call s:h("jsModuleGroup",       {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
+call s:h("cssAttr",             {"bg": s:black, "fg": s:norm })
+hi link cssUIAttr               cssAttr
+hi link lessCssAttribute        cssAttr
 
 call s:h("NERDTreeOpenable", {"fg": s:red})
 call s:h("NERDTreeClosable", {"fg": s:red})

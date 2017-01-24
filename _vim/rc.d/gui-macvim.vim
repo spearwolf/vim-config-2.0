@@ -8,8 +8,10 @@ let macvim_skip_cmd_opt_movement=1
 map <silent> <C-M-Left> gT
 map <silent> <C-M-Right> gt
 
-set guifont=Fura\ Mono\ Medium\ for\ Powerline:h14
+"set guifont=Fura\ Mono\ Medium\ for\ Powerline:h14
+"set guifont=Fira\ Mono\ Medium\ for\ Powerline:h14
 "set guifont=Roboto\ Mono:h14
+set guifont=LMMono10-Regular:h17
 set linespace=1
 
 let g:enable_bold_font = 1
@@ -20,12 +22,13 @@ set transparency=2
 
 "set lines=37 columns=140
 "set lines=42 columns=128
-set lines=32 columns=144
+"set lines=32 columns=144
 "set lines=36 columns=130
+set lines=30 columns=130
 
 
 " #==--- dark colorschemes ------- --  -
-set background=dark
+"set background=dark
 "colorscheme molokayo
 "colorscheme zeroOne-Dark
 "colorscheme OceanicNext
@@ -35,23 +38,24 @@ set background=dark
 "colorscheme tender
 
 "let g:sierra_Twilight = 1
-let g:sierra_Nevada = 1
+"let g:sierra_Nevada = 1
+let g:sierra_Sunset = 1
 "colorscheme sierra
 
-"let g:despacio_Sunset = 1 "medium gray background
+let g:despacio_Sunset = 1 "medium gray background
 "let g:despacio_Twilight = 1 "dark gray background
 "let g:despacio_Midnight = 1 "almost black background
 "let g:despacio_Pitch = 1 "black background
-let g:despacio_Campfire = 1 "Changes theme depending on time of day
+"let g:despacio_Campfire = 1 "Changes theme depending on time of day
 "colorscheme despacio
 
 "let g:alduin_Shout_Become_Ethereal = 1 "black background
-"let g:alduin_Contract_Vampirism = 1 "gray to black @ 5p
+let g:alduin_Contract_Vampirism = 1 "gray to black @ 5p
 let g:alduin_Shout_Aura_Whisper = 1 "underline matching parens
 let g:alduin_Shout_Fire_Breath = 1 "adds dark red color
 "let g:alduin_Shout_Animal_Allegiance = 1 "removes background from Strings
 "let g:alduin_Shout_Clear_Skies = 1 "removes cursorline
-colorscheme alduin
+"colorscheme alduin
 
 "colorscheme Apprentice
 "colorscheme fruity
@@ -69,5 +73,17 @@ colorscheme alduin
 "colorscheme PaperColor
 "colorscheme one
 
-"let g:airline_theme = 'light'
+" pencil
+let g:pencil_higher_contrast_ui = 0   " 0=low (def), 1=high
+let g:pencil_neutral_headings = 0   " 0=blue (def), 1=normal
+let g:pencil_neutral_code_bg = 1   " 0=gray (def), 1=normal
+let g:pencil_spell_undercurl = 1       " 0=underline, 1=undercurl (def)
+let g:pencil_terminal_italics = 1
+
+set background=light
+colorscheme snowcrystal
+"colorscheme off
+
+"let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'yowish'
 

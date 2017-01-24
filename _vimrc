@@ -57,7 +57,6 @@ Plug 'ajh17/Spacegray.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'google/vim-colorscheme-primary'
 Plug 'rakr/vim-one'
-Plug 'AlessandroYorba/Sierra'
 Plug 'altercation/vim-colors-solarized'
 
 Plug 'romainl/Apprentice'
@@ -65,11 +64,17 @@ Plug 'mitsuhiko/fruity-vim-colorscheme'
 Plug 'scheakur/vim-scheakur'
 Plug 'zanglg/nova.vim'
 Plug 'acoustichero/goldenrod.vim'
-Plug 'kamwitsta/nordisk'
 Plug 'KKPMW/moonshine-vim'
 Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Despacio'
+Plug 'AlessandroYorba/Sidonia'
+Plug 'AlessandroYorba/Sierra'
 Plug 'jordwalke/flatlandia'
+Plug 'dikiaap/minimalist'
+Plug 'john2x/flatui.vim'
+Plug 'colepeters/spacemacs-theme.vim'  " only for true-color terminals
+Plug 'pbrisbin/vim-colors-off'
+Plug 'reedes/vim-colors-pencil'
 
 
 call plug#end()

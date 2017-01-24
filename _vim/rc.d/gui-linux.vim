@@ -3,7 +3,8 @@
 let g:enable_bold_font = 1
 
 "set guifont=Monospace\ 11
-set guifont=Go\ Mono\ 12
+set guifont=Go\ Mono\ 14
+set linespace=3
 
 "set lines=30 columns=105
 set lines=33 columns=111

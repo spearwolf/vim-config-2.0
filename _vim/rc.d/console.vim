@@ -3,5 +3,7 @@
 set background=dark
 "colorscheme molokayo
 "colorscheme zeroOne-Dark
-colorscheme spacegray
+"colorscheme spacegray
+"colorscheme Sidonia
+colorscheme moonshine
 

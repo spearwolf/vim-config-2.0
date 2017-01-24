@@ -1,5 +1,5 @@
 " --- vim-colorscheme -=* snowcrystal *=- ----- --- --  -
-" created 2015 by wolfger@spearwolf.de
+" created 2015-17 by wolfger@spearwolf.de
 " --------------------------------------- --- --  -
 
 set background=light
@@ -32,9 +32,16 @@ hi String       gui=none    guibg=#ffffea  guifg=#606000
 hi Title        gui=none    guibg=#563d7c  guifg=#ffffff
 hi Type         gui=bold                   guifg=#0080d0
 
+hi! link Directory Type
+
+hi lessInclude  gui=none                   guifg=#DF6936
+hi lessId       gui=bold                   guifg=#DF6936
+hi! link lessIdChar lessId
+hi lessVariable gui=bold                   guifg=#42A282
+
 hi Cursor       gui=inverse guifg=#ff9933
 hi CursorLine   gui=none    guibg=#f9f9f0
-hi Visual       gui=none    guibg=#204070  guifg=#ffffff
+hi Visual       gui=none    guibg=#2266aa  guifg=#e0f0ff
 hi Question     gui=none    guibg=#ffff00  guifg=#000000
 
 hi StatusLine   gui=none    guibg=#56a0ee  guifg=#ffffff  term=BOLD,reverse cterm=NONE ctermfg=Yellow ctermbg=DarkGray
