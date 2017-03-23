@@ -35,7 +35,9 @@ set textwidth=0  "120
 set linebreak
 set nowrap
 set whichwrap+=h,l,<,>,[,]
-set nolist
+
+"set nolist
+set list
 
 " Better redrawing for large files
 set ttyfast
@@ -54,10 +56,6 @@ set history=10000
 
 " Set to auto read when a file is changed from the outside
 set autoread
-
-" Minimal number of screen lines to keep above and below the cursor
-set scrolloff=3
-set sidescrolloff=5
 
 " No need to show mode
 set noshowmode

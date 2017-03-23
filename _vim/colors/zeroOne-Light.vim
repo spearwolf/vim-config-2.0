@@ -29,17 +29,27 @@ let s:bg_c              = { "gui": "#B2B2B2" }
 
 let s:norm              = { "gui": "#646464" }
 let s:not_norm          = { "gui": "#767676" }
-let s:statement         = { "gui": "#506080" }
+let s:statement         = { "gui": "#506090" }
 let s:identifier        = { "gui": "#000000" }
 let s:constant          = { "gui": "#F000A0" }
-let s:string            = { "gui": "#B32561" }
+"let s:string            = { "gui": "#B32561" }
+let s:string            = { "gui": "#D66700" }
+let s:string_bg         = { "gui": "#FFFAEB" }
 
-let s:comment           = { "gui": "#42a282" }
-let s:comment_bg        = { "gui": "#F0FFF7" }
-let s:comment_bg_inner  = { "gui": "#E0FFE7" }
+"green:
+"let s:comment           = { "gui": "#42a282" }
+"let s:comment_bg        = { "gui": "#F0FFF7" }
+"let s:comment_bg_inner  = { "gui": "#E0FFE7" }
+"blueish:
+let s:comment           = { "gui": "#4282A2" }
+let s:comment_bg        = { "gui": "#F0F7FF" }
+let s:comment_bg_inner  = { "gui": "#E0E7FF" }
 
-let s:cursor            = { "gui": "#443311" }
-let s:cursor_bg         = { "gui": "#FF9966" }
+"let s:cursor            = { "gui": "#443311" }
+"let s:cursor_bg         = { "gui": "#FF9966" }
+let s:cursor            = { "gui": "#225544" }
+let s:cursor_bg         = { "gui": "#66FF99" }
+
 let s:visual            = { "gui": "#c6e6ff" }
 let s:search_bg         = { "gui": "#f2f252" }
 let s:todo_fg           = { "gui": "#306090" }
@@ -72,7 +82,7 @@ hi! link Character        Constant
 hi! link Number           Constant
 hi! link Boolean          Constant
 hi! link Float            Constant
-call s:h("String",        {"bg": s:bg, "fg": s:string})
+call s:h("String",        {"bg": s:string_bg, "fg": s:string})
 
 hi! link Function         Identifier
 call s:h("Statement",     {"fg": s:statement, "gui": "bold"})

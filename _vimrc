@@ -19,7 +19,7 @@ Plug 'ajh17/VimCompletesMe'
 Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'moll/vim-node'
@@ -28,13 +28,15 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'gorkunov/smartpairs.vim'
 Plug 'mattn/emmet-vim'
+Plug 'w0rp/ale'
+Plug 'fleischie/vim-styled-components'
 
 " languages
 "Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-git'
 Plug 'vim-ruby/vim-ruby'
 Plug 'moll/vim-node'
-Plug 'pangloss/vim-javascript', { 'branch': 'develop' }
+Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
 Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
@@ -58,7 +60,6 @@ Plug 'jacoborus/tender.vim'
 Plug 'google/vim-colorscheme-primary'
 Plug 'rakr/vim-one'
 Plug 'altercation/vim-colors-solarized'
-
 Plug 'romainl/Apprentice'
 Plug 'mitsuhiko/fruity-vim-colorscheme'
 Plug 'scheakur/vim-scheakur'
@@ -76,9 +77,17 @@ Plug 'colepeters/spacemacs-theme.vim'  " only for true-color terminals
 Plug 'pbrisbin/vim-colors-off'
 Plug 'reedes/vim-colors-pencil'
 
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'tomasiser/vim-code-dark'
+Plug 'AlessandroYorba/Monrovia'
+
+Plug 'smurfd/winterd'
+
 
 call plug#end()
 " - -- ----------------------------------- ----- --  -
+
+silent! helptags ALL
 
 runtime! rc.d/neocomplete.vim
 runtime! rc.d/nerdtree.vim
@@ -88,11 +97,12 @@ runtime! rc.d/syntax.vim
 runtime! rc.d/quickfix.vim
 runtime! rc.d/last-cursor-position.vim
 runtime! rc.d/remove-trailing-whitespaces.vim
+runtime! rc.d/ale.vim
 runtime! rc.d/key-mappings.vim
-runtime! rc.d/syntastic.vim
 runtime! rc.d/complete.vim
 runtime! rc.d/jsx.vim
 runtime! rc.d/airline.vim
+runtime! rc.d/nerdcommenter.vim
 
 if has("gui_running")
 
