@@ -29,5 +29,5 @@ func! ToggleAleJsLinter()
 endf
 
 " <F3> toggle javascript linters: eslint -> standard -> jshint ->
-map <silent> <F3> <Esc><Plug>(ale_toggle)<CR>:call ToggleAleJsLinter()<CR><Plug>(ale_toggle)<CR>:echo g:ale_linters['javascript'][0]<CR>
+map <silent> <F4> <Esc><Plug>(ale_toggle)<CR>:call ToggleAleJsLinter()<CR><Plug>(ale_toggle)<CR>:echo g:ale_linters['javascript'][0]<CR>
 

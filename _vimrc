@@ -30,6 +30,7 @@ Plug 'gorkunov/smartpairs.vim'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'fleischie/vim-styled-components'
+Plug 'sbdchd/neoformat'
 
 " languages
 "Plug 'sheerun/vim-polyglot'
@@ -83,6 +84,17 @@ Plug 'AlessandroYorba/Monrovia'
 
 Plug 'smurfd/winterd'
 
+" seagull, petrel
+Plug 'nightsense/seabird'
+
+" basic-dark, basic-light
+Plug 'zcodes/vim-colors-basic'
+
+" dark
+Plug 'carakan/new-railscasts-theme'
+
+" light
+
 
 call plug#end()
 " - -- ----------------------------------- ----- --  -
@@ -103,6 +115,7 @@ runtime! rc.d/complete.vim
 runtime! rc.d/jsx.vim
 runtime! rc.d/airline.vim
 runtime! rc.d/nerdcommenter.vim
+runtime! rc.d/neoformat.vim
 
 if has("gui_running")
 
