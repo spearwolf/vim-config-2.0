@@ -191,6 +191,10 @@ hi link jsHtmlElemAttrs             Normal
 
 call s:h("jsModules",        {"fg": s:red, "gui": "bold"})
 call s:h("jsModuleKeywords", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
+hi link jsImport jsModules
+hi link jsFrom jsModules
+hi link jsExport jsModules
+
 call s:h("jsDocTags",        {"fg": s:comment, "bg": s:comment_bg, "gui": "bold"})
 call s:h("jsDocType",        {"fg": s:comment, "bg": s:comment_bg})
 call s:h("jsDocParam",       {"fg": s:comment, "bg": s:comment_bg_inner})
