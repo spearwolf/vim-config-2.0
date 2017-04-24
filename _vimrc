@@ -31,6 +31,7 @@ Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'fleischie/vim-styled-components'
 Plug 'sbdchd/neoformat'
+Plug 'fatih/vim-go'
 
 " languages
 "Plug 'sheerun/vim-polyglot'
