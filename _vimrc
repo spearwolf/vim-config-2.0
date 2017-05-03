@@ -48,53 +48,43 @@ Plug 'leafgarland/typescript-vim'
 Plug 'digitaltoad/vim-pug'
 
 " colorschemes
-Plug 'morhetz/gruvbox'
-Plug 'tomasr/molokai'
-Plug 'fmoralesc/molokayo'
-Plug 'yosiat/oceanic-next-vim'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'MaxSt/FlatColor'
-Plug 'chriskempson/base16-vim'
-Plug 'goatslacker/mango.vim'
-Plug 'KabbAmine/yowish.vim'
-Plug 'ajh17/Spacegray.vim'
-Plug 'jacoborus/tender.vim'
-Plug 'google/vim-colorscheme-primary'
-Plug 'rakr/vim-one'
-Plug 'altercation/vim-colors-solarized'
-Plug 'romainl/Apprentice'
-Plug 'mitsuhiko/fruity-vim-colorscheme'
-Plug 'scheakur/vim-scheakur'
-Plug 'zanglg/nova.vim'
 Plug 'acoustichero/goldenrod.vim'
-Plug 'KKPMW/moonshine-vim'
+Plug 'ajh17/Spacegray.vim'
 Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Despacio'
+Plug 'AlessandroYorba/Monrovia'
 Plug 'AlessandroYorba/Sidonia'
 Plug 'AlessandroYorba/Sierra'
-Plug 'jordwalke/flatlandia'
-Plug 'dikiaap/minimalist'
-Plug 'john2x/flatui.vim'
-Plug 'colepeters/spacemacs-theme.vim'  " only for true-color terminals
-Plug 'pbrisbin/vim-colors-off'
-Plug 'reedes/vim-colors-pencil'
-
+Plug 'altercation/vim-colors-solarized'
+Plug 'carakan/new-railscasts-theme'     " dark
+Plug 'chriskempson/base16-vim'
+Plug 'colepeters/spacemacs-theme.vim'   " only for true-color terminals
 Plug 'danilo-augusto/vim-afterglow'
-Plug 'tomasiser/vim-code-dark'
-Plug 'AlessandroYorba/Monrovia'
-
+Plug 'dikiaap/minimalist'
+Plug 'fmoralesc/molokayo'
+Plug 'goatslacker/mango.vim'
+Plug 'google/vim-colorscheme-primary'
+Plug 'jacoborus/tender.vim'
+Plug 'john2x/flatui.vim'
+Plug 'jordwalke/flatlandia'
+Plug 'KabbAmine/yowish.vim'
+Plug 'KKPMW/moonshine-vim'
+Plug 'MaxSt/FlatColor'
+Plug 'mitsuhiko/fruity-vim-colorscheme'
+Plug 'morhetz/gruvbox'
+Plug 'nightsense/seabird'               " seagull, petrel
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'pbrisbin/vim-colors-off'
+Plug 'rakr/vim-one'
+Plug 'reedes/vim-colors-pencil'
+Plug 'romainl/Apprentice'
+Plug 'scheakur/vim-scheakur'
 Plug 'smurfd/winterd'
-
-" seagull, petrel
-Plug 'nightsense/seabird'
-
-" basic-dark, basic-light
-Plug 'zcodes/vim-colors-basic'
-
-" dark
-Plug 'carakan/new-railscasts-theme'
-
-" light
+Plug 'tomasiser/vim-code-dark'
+Plug 'tomasr/molokai'
+Plug 'yosiat/oceanic-next-vim'
+Plug 'zanglg/nova.vim'
+Plug 'zcodes/vim-colors-basic'          " basic-dark, basic-light
 
 
 call plug#end()

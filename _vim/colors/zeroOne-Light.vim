@@ -33,8 +33,8 @@ let s:statement         = { "gui": "#506090" }
 let s:identifier        = { "gui": "#000000" }
 let s:constant          = { "gui": "#F000A0" }
 "let s:string            = { "gui": "#B32561" }
-let s:string            = { "gui": "#D66700" }
-let s:string_bg         = { "gui": "#FFFAEB" }
+let s:string            = { "gui": "#B0A040" }
+let s:string_bg         = { "gui": "#FFFAEA" }
 
 "green:
 "let s:comment           = { "gui": "#42a282" }

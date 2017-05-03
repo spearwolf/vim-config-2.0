@@ -5,3 +5,5 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 "let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_working_path_mode = 'a'
 
+let g:ctrlp_open_new_file = 'v'
+

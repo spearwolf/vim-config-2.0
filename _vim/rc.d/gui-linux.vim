@@ -1,7 +1,9 @@
 " gui_gtk2
 
-" New tab C-T
-map <silent> <S-C-T> :tabnew<CR>
+" New tab Shift-Alt-t
+map <silent> <S-A-t> <Esc>:tabnew<CR>
+" Wipe tab
+map <silent> <S-A-w> <Esc>:bw!<CR>
 
 " Navigate between tabs: ctrl+alt+(left|right)
 "map <silent> <C-A-Left> gT
@@ -9,13 +11,13 @@ map <silent> <S-C-T> :tabnew<CR>
 
 let g:enable_bold_font = 1
 
-set guifont=Monospace\ 11
+set guifont=Monospace\ 13
 "set guifont=Go\ Mono\ 14
 "set guifont=Courier\ 10\ Pitch\ 11
 set linespace=0
 
 "set lines=30 columns=105
-set lines=33 columns=111
+set lines=42 columns=130
 
 " #==--- dark colorschemes ------- --  -
 "set background=dark
