@@ -76,7 +76,8 @@ set background=light
 "colorscheme zeroOne-LightComic
 "colorscheme PaperColor
 
-colorscheme one
+let g:one_allow_italics = 1 " I love italic for comments
+colorscheme one  " BEST EVER light one!!
 hi SignColumn guibg=NONE
 
 " pencil colorscheme config
@@ -86,7 +87,18 @@ let g:pencil_neutral_code_bg = 1   " 0=gray (def), 1=normal
 let g:pencil_spell_undercurl = 1       " 0=underline, 1=undercurl (def)
 let g:pencil_terminal_italics = 1
 
-" dark them
+
+" #==--- dark colorschemes ------- --  -
+"set background=dark
+"colorscheme Apprentice
+
+" o===)-------- -
+" airline
+" o===)-------- -
+
+let g:airline_theme='one'
+
+" dark theme
 "let g:airline_theme = 'powerlineish'
 
 " light theme

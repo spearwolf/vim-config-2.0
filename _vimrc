@@ -16,10 +16,10 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'ajh17/VimCompletesMe'
+"Plug 'scrooloose/syntastic'
 Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-"Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'moll/vim-node'
@@ -31,7 +31,6 @@ Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'fleischie/vim-styled-components'
 Plug 'sbdchd/neoformat'
-Plug 'fatih/vim-go'
 
 " languages
 "Plug 'sheerun/vim-polyglot'
@@ -46,6 +45,8 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'digitaltoad/vim-pug'
+Plug 'fatih/vim-go'
+Plug 'rust-lang/rust.vim'
 
 " colorschemes
 Plug 'acoustichero/goldenrod.vim'
@@ -85,6 +86,7 @@ Plug 'tomasr/molokai'
 Plug 'yosiat/oceanic-next-vim'
 Plug 'zanglg/nova.vim'
 Plug 'zcodes/vim-colors-basic'          " basic-dark, basic-light
+Plug 'nanotech/jellybeans.vim'
 
 
 call plug#end()
