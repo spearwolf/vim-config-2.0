@@ -53,8 +53,6 @@ Plug 'acoustichero/goldenrod.vim'
 Plug 'ajh17/Spacegray.vim'
 Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Despacio'
-Plug 'AlessandroYorba/Monrovia'
-Plug 'AlessandroYorba/Sidonia'
 Plug 'AlessandroYorba/Sierra'
 Plug 'altercation/vim-colors-solarized'
 Plug 'carakan/new-railscasts-theme'     " dark
@@ -87,6 +85,8 @@ Plug 'yosiat/oceanic-next-vim'
 Plug 'zanglg/nova.vim'
 Plug 'zcodes/vim-colors-basic'          " basic-dark, basic-light
 Plug 'nanotech/jellybeans.vim'
+Plug 'float168/vim-colors-cherryblossom'
+Plug 'KeitaNakamura/neodark.vim'
 
 
 call plug#end()

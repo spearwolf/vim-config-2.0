@@ -18,6 +18,9 @@ map <silent> <C-x> <Leader>ci
 " <F2> NERD tree
 map <silent> <F2> <Esc>:NERDTreeToggle<CR>
 
+" <F9> unset SignColumn background color
+map <silent> <F9> <Esc>:hi SignColumn guibg=NONE<CR>
+
 " <F10> show current syntax highlight group
 map <silent> <F10> <Esc>:echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 

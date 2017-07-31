@@ -15,8 +15,10 @@ let g:ale_lint_on_text_changed = 1
 "let g:ale_javascript_eslint_use_global = 1
 
 "let g:ale_linters = { 'javascript': ['jshint', 'eslint', 'standard'] }
-let g:ale_linters = { 'javascript': ['eslint'] }
 "let g:ale_linters = { 'javascript': ['standard'] }
+let g:ale_linters = { 'javascript': ['eslint'], 'html': ['tidy'] }
+
+let g:ale_html_tidy_options = '-q -e -language en -config .tidy.conf'
 
 func! ToggleAleJsLinter()
     if g:ale_linters['javascript'][0] == 'eslint'

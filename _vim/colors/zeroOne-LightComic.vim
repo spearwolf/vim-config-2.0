@@ -20,7 +20,8 @@ let s:nearly_white    = { "gui": "#E0E0E0", "cterm": "253" }
 let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:pink_bg         = { "gui": "#fff0f8", "cterm": "15"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
-let s:gray_red        = { "gui": "#C35571", "cterm": "1"   }
+" let s:gray_red        = { "gui": "#C34571", "cterm": "1"   }
+let s:gray_red        = { "gui": "#a05070", "cterm": "1"   }
 let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
 let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
 let s:orange_s        = { "gui": "#F08020", "cterm": "167" }
@@ -29,6 +30,7 @@ let s:dark_blue       = { "gui": "#008EC4", "cterm": "4"   }
 let s:gray_blue       = { "gui": "#507099", "cterm": "4"   }
 let s:blue            = { "gui": "#20BBFC", "cterm": "12"  }
 let s:light_blue      = { "gui": "#c6e6ff", "cterm": "153" }
+let s:blue_white      = { "gui": "#f0f8ff", "cterm": "153" }
 let s:dark_cyan       = { "gui": "#20A5BA", "cterm": "6"   }
 let s:light_cyan      = { "gui": "#4FB8CC", "cterm": "14"  }
 let s:dark_green      = { "gui": "#10A778", "cterm": "2"   }
@@ -38,9 +40,8 @@ let s:light_purple    = { "gui": "#6855DE", "cterm": "13"  }
 let s:lila            = { "gui": "#F000A0", "cterm": "5"   }
 let s:yellow          = { "gui": "#F3E430", "cterm": "11"  }
 let s:yellow_cursor   = { "gui": "#FFFF00", "cterm": "11"  }
-let s:yellow_c        = { "gui": "#a2a232", "cterm": "11"  }
-let s:yellow_cl       = { "gui": "#b2b272", "cterm": "11"  }
-let s:yellow_white    = { "gui": "#FFFFF0", "cterm": "11"  }
+let s:yellow_c        = { "gui": "#E2E232", "cterm": "11"  }
+let s:yellow_white    = { "gui": "#FFFFA0", "cterm": "11"  }
 let s:green_cl        = { "gui": "#72b272", "cterm": "10"  }
 let s:green_white     = { "gui": "#F0FFF0", "cterm": "11"  }
 let s:green_dark_white = { "gui": "#E0FFE0", "cterm": "11"  }
@@ -58,16 +59,14 @@ let s:green           = s:dark_green
 let s:red             = s:dark_red
 let s:visual          = s:light_blue
 let s:constant        = s:lila  "s:medium_gray
-"let s:comment         = s:yellow_cl
-"let s:comment_bg      = s:yellow_white
 let s:comment         = s:green_cl
 let s:comment_bg      = s:green_white
 let s:comment_bg_bg   = s:green_dark_white
 let s:identifier      = s:actual_black
 let s:string          = s:gray_red
 
-let s:cursor_bg = { "gui": "#FF9966", "cterm": "0" }
-let s:cursor_fg = { "gui": "#443311", "cterm": "15" }
+let s:cursor_bg = { "gui": "#FF0066", "cterm": "0" }
+let s:cursor_fg = { "gui": "#fffff0", "cterm": "15" }
 
 " https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)
@@ -138,7 +137,7 @@ hi! link Debug            Special
 call s:h("Underlined",    {"fg": s:norm, "gui": "underline", "cterm": "underline"})
 call s:h("Ignore",        {"fg": s:bg})
 call s:h("Error",         {"fg": s:actual_white, "bg": s:red, "cterm": "bold"})
-call s:h("Todo",          {"fg": s:pink, "bg": s:yellow, "gui": "bold", "cterm": "bold"})
+call s:h("Todo",          {"fg": s:pink, "bg": s:yellow_white, "gui": "bold", "cterm": "bold"})
 call s:h("SpecialKey",    {"fg": s:light_green})
 call s:h("NonText",       {"fg": s:medium_gray})
 call s:h("Directory",     {"fg": s:dark_blue})
@@ -213,5 +212,10 @@ hi link jsFunction                  Statement
 hi link jsArrowFunction             Statement
 hi link jsOperator                  Normal
 hi link jsHtmlElemAttrs             Normal
-call s:h("jsModules", {"fg": s:dark_red, "gui": "bold"})
 
+call s:h("jsModules", {"fg": s:dark_red, "gui": "bold"})
+hi link jsImport   jsModules
+hi link jsFrom     jsModules
+hi link jsExport   jsModules
+call s:h("jsExportDefault", {"bg": s:bg, "fg": s:dark_blue, "gui": "bold"})
+call s:h("jsGlobalObjects", {"bg": s:blue_white, "fg": s:gray_blue})

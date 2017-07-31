@@ -22,11 +22,11 @@ let g:enable_bold_font = 0
 set transparency=2
 "set blurradius=3
 
-"set lines=37 columns=140
+set lines=32 columns=139
 "set lines=42 columns=128
 "set lines=32 columns=144
 "set lines=36 columns=130
-set lines=30 columns=130
+" set lines=30 columns=130
 
 
 " #==--- dark colorschemes ------- --  -
@@ -78,7 +78,7 @@ set background=light
 
 let g:one_allow_italics = 1 " I love italic for comments
 colorscheme one  " BEST EVER light one!!
-hi SignColumn guibg=NONE
+" hi SignColumn guibg=NONE
 
 " pencil colorscheme config
 let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
