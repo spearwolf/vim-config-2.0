@@ -49,7 +49,6 @@ Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 
 " colorschemes
-Plug 'acoustichero/goldenrod.vim'
 Plug 'ajh17/Spacegray.vim'
 Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Despacio'
@@ -71,14 +70,13 @@ Plug 'KKPMW/moonshine-vim'
 Plug 'MaxSt/FlatColor'
 Plug 'mitsuhiko/fruity-vim-colorscheme'
 Plug 'morhetz/gruvbox'
-Plug 'nightsense/seabird'               " seagull, petrel
+Plug 'nightsense/seabird'               " seagull, greygull, petrel, stormpetrel
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'pbrisbin/vim-colors-off'
 Plug 'rakr/vim-one'
 Plug 'reedes/vim-colors-pencil'
 Plug 'romainl/Apprentice'
 Plug 'scheakur/vim-scheakur'
-Plug 'smurfd/winterd'
 Plug 'tomasiser/vim-code-dark'
 Plug 'tomasr/molokai'
 Plug 'yosiat/oceanic-next-vim'
@@ -87,7 +85,12 @@ Plug 'zcodes/vim-colors-basic'          " basic-dark, basic-light
 Plug 'nanotech/jellybeans.vim'
 Plug 'float168/vim-colors-cherryblossom'
 Plug 'KeitaNakamura/neodark.vim'
-
+Plug 'GGalizzi/cake-vim'                " light
+Plug 'nice/sweater'
+Plug 'chr4/jellygrass.vim'
+Plug 'yuttie/hydrangea-vim'
+Plug 'wolverian/minimal'
+Plug 'lu-ren/SerialExperimentsLain'
 
 call plug#end()
 " - -- ----------------------------------- ----- --  -

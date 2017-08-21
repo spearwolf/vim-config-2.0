@@ -1,6 +1,8 @@
-" --- vim-colorscheme -=* zeroOne-Dark *=- ----- --- --  -
+" #-- vim-colorscheme -=* zeroOne-Dark *=- ----- --- --  -
 " Created 2016-17 by wolfger@spearwolf.de
-" --------------------------------------- --- --  -
+" O==#=====-===---=---------------------------- --- --  -
+
+" TODO publish this colortheme ;-)
 
 hi clear
 set background=dark
@@ -11,7 +13,7 @@ endif
 
 let g:colors_name = 'zeroOne-Dark'
 
-" =====================-==---=--------------- --   -  -
+" =====================-==---=--------------- --   -  - >
 
 let s:black             = { "gui": "#000000" }
 let s:blue              = { "gui": "#20BBFC" }
@@ -19,8 +21,10 @@ let s:blue_dark         = { "gui": "#008EC4" }
 let s:green_dark        = { "gui": "#10A778" }
 let s:green_light       = { "gui": "#5FD7A7" }
 let s:pink              = { "gui": "#fb007a" }
-let s:purple            = { "gui": "#523C79" }
 let s:red               = { "gui": "#C30771" }
+
+let s:yellow_fg         = { "gui": "#aaaa00" }
+let s:yellow_bg         = { "gui": "#202020" }
 
 let s:bg                = { "gui": "#202020" }
 let s:bg_a              = { "gui": "#303030" }
@@ -33,11 +37,10 @@ let s:statement         = { "gui": "#607090" }
 let s:identifier        = { "gui": "#ecece8" }
 let s:constant          = { "gui": "#ffaa33" }
 
-"let s:string            = { "gui": "#B32561" }
-let s:string            = { "gui": "#D33551" }
+let s:string            = { "gui": "#C33571" }
 
 let s:comment           = { "gui": "#42a282" }
-let s:comment_bg        = { "gui": "#183838" }
+let s:comment_bg        = { "gui": "#203028" }
 let s:comment_bg_inner  = { "gui": "#103030" }
 
 let s:search_fg         = { "gui": "#553311" }
@@ -46,19 +49,17 @@ let s:search_bg         = { "gui": "#ffffa0" }
 let s:js_modules        = { "gui": "#DF6936" }
 let s:js_modules_bg     = { "gui": "#3F2900" }
 
-let s:cursor_bg         = { "gui": "#00ee66" }
-let s:cursor_fg         = { "gui": "#336699" }
+let s:cursor_fg         = { "gui": "#000000" }
+let s:cursor_bg         = { "gui": "#f0f0f0" }
 
 let s:visual_bg         = { "gui": "#2266aa" }
 let s:visual_fg         = { "gui": "#e0f0ff" }
 
 let s:todo              = { "gui": "#ffffff" }
 
-" TODO publish this colortheme
-
 " =====================-==---=--------------- --   -  -
 
-" -> https://github.com/noahfrederick/vim-hemisu/
+" -> copied from https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)
   execute "highlight" a:group
     \ "guifg="   (has_key(a:style, "fg")    ? a:style.fg.gui   : "NONE")
@@ -75,7 +76,6 @@ call s:h("Cursor",        {"bg": s:cursor_bg, "fg": s:cursor_fg })
 
 call s:h("Comment",       {"fg": s:comment, "bg": s:comment_bg, "gui": "italic"})
 
-"call s:h("Constant",      {"bg": s:black, "fg": s:constant})
 call s:h("Constant",      {"fg": s:constant})
 hi! link Character        Constant
 hi! link Number           Constant
@@ -181,11 +181,13 @@ call s:h("htmlH6",        {"bg": s:bg, "fg": s:norm})
 hi link SignifySignAdd              LineNr
 hi link SignifySignDelete           LineNr
 hi link SignifySignChange           LineNr
+
 hi link GitGutterAdd                LineNr
 hi link GitGutterDelete             LineNr
 hi link GitGutterChange             LineNr
 hi link GitGutterChangeDelete       LineNr
 
+" ==== js / json ======= ---------------
 hi link jsArrowFunction             Statement
 hi link jsFunction                  Statement
 hi link jsHtmlElemAttrs             Normal
@@ -202,12 +204,11 @@ call s:h("jsDocTypeNoParam",        {"fg": s:comment, "bg": s:comment_bg})
 call s:h("jsFuncArgs",              {"fg": { "gui": "#ffffff" }})
 call s:h("jsFunctionKey",           {"fg": { "gui": "#e6e6e6" }, "bg": { "gui": "#303030" }, "gui": "bold"})
 call s:h("jsGlobalNodeObjects",     {"fg": { "gui": "#ffaa33" }, "bg": { "gui": "#242420" }, "gui": "bold" })
-call s:h("jsImport",                {"fg": s:pink, "gui": "bold" })
-call s:h("jsFrom",                  {"fg": s:pink, "gui": "bold" })
-call s:h("jsExport",                {"fg": s:pink, "gui": "bold" })
-call s:h("jsExportDefault",         {"fg": s:pink, "gui": "bold" })
+call s:h("jsImport",                {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
+call s:h("jsFrom",                  {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
+call s:h("jsExport",                {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
+call s:h("jsExportDefault",         {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
 call s:h("jsImportContainer",       {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
-"call s:h("jsModuleGroup",           {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
 call s:h("jsModuleKeywords",        {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
 call s:h("jsModuleOperators",       {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
 call s:h("jsModules",               {"fg": s:red, "gui": "bold"})
@@ -216,6 +217,9 @@ call s:h("jsObjectKey",             {"fg": { "gui": "#a4a4a4" }})
 call s:h("jsObjectKeyComputed",     {"fg": { "gui": "#a4a4a4" }})
 call s:h("jsSuper",                 {"bg": s:black, "fg": s:statement, "gui": "bold"})
 
+hi link jsonString                  Normal
+
+" ==== xml / html ======= --------------- >
 call s:h("xmlString",               {"bg": s:black, "fg": { "gui": "#ffaa33" }})
 hi link xmlTagName                  Identifier
 hi link xmlEndTag                   Identifier
@@ -228,14 +232,20 @@ hi link htmlEndTag                  Statement
 hi link htmlArg                     Statement
 hi link htmlString                  String
 
+" ==== less / sass / css ======= --------------- >
 hi link lessClass                   Statement
 hi link cssTagName                  Statement
+hi link sassDefinition              Statement
 hi link lessCharClass               Statement
 hi link lessDefinition              Statement
 
 call s:h("lessInclude",         {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
 call s:h("cssStringQ",          {"bg": s:js_modules_bg, "fg": { "gui": "#cc2166" }})
 call s:h("lessAmpersand",       {"fg": { "gui": "#304060" }, "bg": s:black, "gui": "bold"})
+
+hi link sassMixing              lessInclude
+hi link sassMixinName           jsImport
+hi link sassAmpersand           lessInclude
 
 call s:h("cssCommonAttr",       {"bg": s:black, "fg": { "gui": "#fffff0" }})
 call s:h("cssTextAttr",         {"bg": s:black, "fg": { "gui": "#fffff0" }})
@@ -249,6 +259,7 @@ call s:h("cssAttr",             {"bg": s:black, "fg": s:norm })
 hi link cssUIAttr               cssAttr
 hi link lessCssAttribute        cssAttr
 
+" ==== NERDTree ======= --------------- >
 call s:h("NERDTreeOpenable", {"fg": s:red})
 call s:h("NERDTreeClosable", {"fg": s:red})
 call s:h("NERDTreeCWD",      {"fg": { "gui": "#304060" }, "bg": s:black, "gui": "bold"})
