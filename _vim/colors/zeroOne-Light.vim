@@ -21,42 +21,30 @@ let s:pink              = { "gui": "#fb007a" }
 let s:pink_nearky_white = { "gui": "#fff0f8" }
 let s:purple            = { "gui": "#523C79" }
 let s:red               = { "gui": "#C30771" }
-
 let s:bg                = { "gui": "#FFFFFF" }
 let s:bg_a              = { "gui": "#F1F1F1" }
 let s:bg_b              = { "gui": "#E0E0E0" }
 let s:bg_c              = { "gui": "#B2B2B2" }
-
 let s:norm              = { "gui": "#646464" }
 let s:not_norm          = { "gui": "#767676" }
-let s:statement         = { "gui": "#506090" }
+let s:statement         = { "gui": "#4060A0" }
 let s:identifier        = { "gui": "#000000" }
 let s:constant          = { "gui": "#F000A0" }
-"let s:string            = { "gui": "#B32561" }
-let s:string            = { "gui": "#B0A040" }
-let s:string_bg         = { "gui": "#FFFAEA" }
-
-"green:
-"let s:comment           = { "gui": "#42a282" }
-"let s:comment_bg        = { "gui": "#F0FFF7" }
-"let s:comment_bg_inner  = { "gui": "#E0FFE7" }
-"blueish:
-let s:comment           = { "gui": "#4282A2" }
+let s:string            = { "gui": "#C0A040" }
+let s:string_bg         = { "gui": "#FFFDEE" }
+let s:comment           = { "gui": "#5292B2" }
 let s:comment_bg        = { "gui": "#F0F7FF" }
-let s:comment_bg_inner  = { "gui": "#E0E7FF" }
-
-"let s:cursor            = { "gui": "#443311" }
-"let s:cursor_bg         = { "gui": "#FF9966" }
+let s:comment_bg_inner  = { "gui": "#EAF1FF" }
 let s:cursor            = { "gui": "#225544" }
 let s:cursor_bg         = { "gui": "#66FF99" }
-
 let s:visual            = { "gui": "#c6e6ff" }
 let s:search_bg         = { "gui": "#f2f252" }
-let s:todo_fg           = { "gui": "#306090" }
-let s:todo              = { "gui": "#90c0f0" }
-
+let s:todo_fg           = { "gui": "#f03090" }
+let s:todo              = { "gui": "#E0E7FF" }
 let s:js_modules        = { "gui": "#DF6936" }
 let s:js_modules_bg     = { "gui": "#FFF3E6" }
+let s:tag_bg            = { "gui": "#e0faff" }
+let s:tag_fg            = { "gui": "#207080" }
 
 " =====================-==---=--------------- --   -  -
 
@@ -194,6 +182,8 @@ call s:h("jsModuleKeywords", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": 
 hi link jsImport jsModules
 hi link jsFrom jsModules
 hi link jsExport jsModules
+hi link jsExportDefault jsModuleKeywords
+call s:h("jsObjectKey",      {"fg": s:identifier})
 
 call s:h("jsDocTags",        {"fg": s:comment, "bg": s:comment_bg, "gui": "bold"})
 call s:h("jsDocType",        {"fg": s:comment, "bg": s:comment_bg})
@@ -203,3 +193,8 @@ call s:h("jsDocTypeNoParam", {"fg": s:comment, "bg": s:comment_bg})
 call s:h("NERDTreeOpenable", {"fg": s:red})
 call s:h("NERDTreeClosable", {"fg": s:red})
 
+call s:h("xmlTagName",       {"fg": s:tag_fg, "bg": s:tag_bg})
+hi link xmlEndTag xmlTagName
+hi link xmlTag    xmlTagName
+hi link xmlAttrib xmlTagName
+hi link xmlEqual  xmlTagName
