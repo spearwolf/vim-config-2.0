@@ -72,12 +72,12 @@ let g:alduin_Shout_Fire_Breath = 1 "adds dark red color
 " #==--- light colorschemes ------- --  -
 set background=light
 "colorscheme snowcrystal
-"colorscheme zeroOne-Light
+colorscheme zeroOne-Light
 "colorscheme zeroOne-LightComic
 "colorscheme PaperColor
 
 let g:one_allow_italics = 1 " I love italic for comments
-colorscheme one  " BEST EVER light one!!
+" colorscheme one  " BEST EVER light one!!
 " hi SignColumn guibg=NONE
 
 " pencil colorscheme config
@@ -96,11 +96,13 @@ let g:pencil_terminal_italics = 1
 " airline
 " o===)-------- -
 
-let g:airline_theme='one'
+" let g:airline_theme='one'
 
 " dark theme
-"let g:airline_theme = 'powerlineish'
+" let g:airline_theme = 'powerlineish'
+" let g:airline_theme = 'base16_atelierlakeside'
+let g:airline_theme = 'dark_minimal'
 
 " light theme
-let g:airline_theme = 'kalisi'
+" let g:airline_theme = 'kalisi'
 

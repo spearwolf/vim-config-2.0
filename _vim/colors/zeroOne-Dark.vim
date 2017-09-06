@@ -188,7 +188,7 @@ hi link GitGutterChange             LineNr
 hi link GitGutterChangeDelete       LineNr
 
 " ==== js / json ======= ---------------
-hi link jsArrowFunction             Statement
+" hi link jsArrowFunction             Statement
 hi link jsFunction                  Statement
 hi link jsHtmlElemAttrs             Normal
 hi link jsOperator                  Normal
@@ -202,10 +202,13 @@ call s:h("jsDocTags",               {"fg": s:comment, "bg": s:comment_bg, "gui":
 call s:h("jsDocType",               {"fg": s:comment, "bg": s:comment_bg})
 call s:h("jsDocTypeNoParam",        {"fg": s:comment, "bg": s:comment_bg})
 call s:h("jsFuncArgs",              {"fg": { "gui": "#ffffff" }})
+call s:h("jsFuncParens",            {"fg": { "gui": "#ff0066" }, "bg": { "gui": "#332229" }})
+call s:h("jsArrowFunction",         {"fg": s:statement, "bg": { "gui": "#28283A" },  "gui": "bold"})
 call s:h("jsFunctionKey",           {"fg": { "gui": "#e6e6e6" }, "bg": { "gui": "#303030" }, "gui": "bold"})
 call s:h("jsGlobalNodeObjects",     {"fg": { "gui": "#ffaa33" }, "bg": { "gui": "#242420" }, "gui": "bold" })
 call s:h("jsImport",                {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
 call s:h("jsFrom",                  {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
+call s:h("jsModuleAs",              {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
 call s:h("jsExport",                {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
 call s:h("jsExportDefault",         {"fg": s:yellow_fg, "bg": s:yellow_bg, "gui": "bold" })
 call s:h("jsImportContainer",       {"fg": { "gui": "#eeeeee" }, "bg": { "gui": "#333333" }, "gui": "bold" })
@@ -246,6 +249,8 @@ call s:h("lessAmpersand",       {"fg": { "gui": "#304060" }, "bg": s:black, "gui
 hi link sassMixing              lessInclude
 hi link sassMixinName           jsImport
 hi link sassAmpersand           lessInclude
+hi link sassInclude             Statement
+hi link sassVariable            jsFrom
 
 call s:h("cssCommonAttr",       {"bg": s:black, "fg": { "gui": "#fffff0" }})
 call s:h("cssTextAttr",         {"bg": s:black, "fg": { "gui": "#fffff0" }})

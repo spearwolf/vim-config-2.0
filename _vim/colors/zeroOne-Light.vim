@@ -171,19 +171,23 @@ hi link GitGutterDelete             LineNr
 hi link GitGutterChange             LineNr
 hi link GitGutterChangeDelete       LineNr
 
-hi link jsStorageClass              Statement
-hi link jsFunction                  Statement
-hi link jsArrowFunction             Statement
-hi link jsOperator                  Normal
-hi link jsHtmlElemAttrs             Normal
-
 call s:h("jsModules",        {"fg": s:red, "gui": "bold"})
 call s:h("jsModuleKeywords", {"fg": s:js_modules, "bg": s:js_modules_bg, "gui": "bold"})
-hi link jsImport jsModules
-hi link jsFrom jsModules
-hi link jsExport jsModules
-hi link jsExportDefault jsModuleKeywords
 call s:h("jsObjectKey",      {"fg": s:identifier})
+call s:h("jsReturn",         {"fg": s:identifier})
+call s:h("jsOperator",       {"fg": s:identifier})
+
+hi link jsImport            jsModules
+hi link jsFrom              jsModules
+hi link jsExport            jsModules
+hi link jsModuleAs          jsModules
+hi link jsExportDefault     jsModuleKeywords
+hi link jsArrowFunction     Identifier
+hi link jsStorageClass      Statement
+hi link jsFunction          Statement
+hi link jsHtmlElemAttrs     Normal
+" hi link jsArrowFunction     Statement
+" hi link jsOperator          Normal
 
 call s:h("jsDocTags",        {"fg": s:comment, "bg": s:comment_bg, "gui": "bold"})
 call s:h("jsDocType",        {"fg": s:comment, "bg": s:comment_bg})
