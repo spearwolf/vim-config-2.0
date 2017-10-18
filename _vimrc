@@ -27,11 +27,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'gorkunov/smartpairs.vim'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
-Plug 'fleischie/vim-styled-components'
 Plug 'sbdchd/neoformat'
 
-" languages
-"Plug 'sheerun/vim-polyglot'
+" language features
 Plug 'tpope/vim-git'
 Plug 'vim-ruby/vim-ruby'
 Plug 'moll/vim-node'
@@ -41,11 +39,11 @@ Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'mxw/vim-jsx'
+Plug 'fleischie/vim-styled-components'
 Plug 'leafgarland/typescript-vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
-" Plug 'flowtype/vim-flow'
 
 " colorschemes
 Plug 'ajh17/Spacegray.vim'
@@ -55,19 +53,9 @@ Plug 'AlessandroYorba/Sierra'
 Plug 'altercation/vim-colors-solarized'
 Plug 'carakan/new-railscasts-theme'     " dark
 Plug 'chriskempson/base16-vim'
-Plug 'colepeters/spacemacs-theme.vim'   " only for true-color terminals
 Plug 'danilo-augusto/vim-afterglow'
-Plug 'dikiaap/minimalist'
-Plug 'fmoralesc/molokayo'
 Plug 'goatslacker/mango.vim'
-Plug 'google/vim-colorscheme-primary'
 Plug 'jacoborus/tender.vim'
-Plug 'john2x/flatui.vim'
-Plug 'jordwalke/flatlandia'
-Plug 'KabbAmine/yowish.vim'
-Plug 'KKPMW/moonshine-vim'
-Plug 'MaxSt/FlatColor'
-Plug 'mitsuhiko/fruity-vim-colorscheme'
 Plug 'morhetz/gruvbox'
 Plug 'nightsense/seabird'               " seagull, greygull, petrel, stormpetrel
 Plug 'NLKNguyen/papercolor-theme'
@@ -76,20 +64,33 @@ Plug 'rakr/vim-one'
 Plug 'reedes/vim-colors-pencil'
 Plug 'romainl/Apprentice'
 Plug 'scheakur/vim-scheakur'
-Plug 'tomasiser/vim-code-dark'
-Plug 'tomasr/molokai'
-Plug 'yosiat/oceanic-next-vim'
 Plug 'zanglg/nova.vim'
 Plug 'zcodes/vim-colors-basic'          " basic-dark, basic-light
 Plug 'nanotech/jellybeans.vim'
 Plug 'float168/vim-colors-cherryblossom'
 Plug 'KeitaNakamura/neodark.vim'
-Plug 'GGalizzi/cake-vim'                " light
 Plug 'nice/sweater'
-Plug 'chr4/jellygrass.vim'
-Plug 'yuttie/hydrangea-vim'
 Plug 'wolverian/minimal'
-Plug 'lu-ren/SerialExperimentsLain'
+
+" sorted out colorschemes:
+" Plug 'google/vim-colorscheme-primary'
+" Plug 'colepeters/spacemacs-theme.vim'   " only for true-color terminals
+" Plug 'dikiaap/minimalist'
+" Plug 'fmoralesc/molokayo'
+" Plug 'john2x/flatui.vim'
+" Plug 'jordwalke/flatlandia'
+" Plug 'KabbAmine/yowish.vim'
+" Plug 'KKPMW/moonshine-vim'
+" Plug 'MaxSt/FlatColor'
+" Plug 'mitsuhiko/fruity-vim-colorscheme'
+" Plug 'tomasiser/vim-code-dark'
+" Plug 'tomasr/molokai'
+" Plug 'yosiat/oceanic-next-vim'
+" Plug 'GGalizzi/cake-vim'                " light
+" Plug 'chr4/jellygrass.vim'
+" Plug 'yuttie/hydrangea-vim'
+" Plug 'lu-ren/SerialExperimentsLain'
+" Plug 'liuchengxu/space-vim-dark'
 
 call plug#end()
 " - -- ----------------------------------- ----- --  -
@@ -113,20 +114,13 @@ runtime! rc.d/nerdcommenter.vim
 runtime! rc.d/neoformat.vim
 
 if has("gui_running")
-
     runtime! rc.d/gui.vim
-
     if has("gui_gtk2")
         runtime! rc.d/gui-linux.vim
     endif
-
     if has("gui_macvim")
         runtime! rc.d/gui-macvim.vim
     endif
-
 else
-
     runtime! rc.d/console.vim
-
 endif
-

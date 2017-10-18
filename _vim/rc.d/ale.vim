@@ -26,14 +26,14 @@ let g:ale_completion_enabled = 1
 
 "let g:ale_linters = { 'javascript': ['jshint', 'eslint', 'standard'] }
 "let g:ale_linters = { 'javascript': ['standard'] }
-let g:ale_linters = { 'javascript': ['eslint', 'flow'], 'html': ['tidy'] }
+let g:ale_linters = { 'javascript': ['eslint', 'flow'], 'html': ['tidy'], 'css': ['stylelint'] }
 
 let g:ale_html_tidy_options = '-q -e -language en -config .tidy.conf'
 
 func! s:JavascriptToggleLinter()
     execute "normal \<Plug>(ale_toggle)"
     if g:ale_linters['javascript'][0] == 'eslint'
-        let g:ale_linters = { 'javascript': ['standard'] }
+        let g:ale_linters = { 'javascript': ['standard', 'flow'] }
     elseif g:ale_linters['javascript'][0] == 'standard'
         let g:ale_linters = { 'javascript': ['eslint', 'flow'] }
     endif
