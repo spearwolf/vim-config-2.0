@@ -5,12 +5,12 @@
 set background=light
 
 hi clear
-if exists("syntax_on")
-    syntax reset
-endif
+syntax reset
 
 let g:colors_name = "snowcrystal"
 
+hi Normal       gui=none    guibg=#ffffff  guifg=#333333
+hi Keyword      gui=italic                 guifg=#666666
 hi Boolean      gui=bold    guibg=#f0f0f0  guifg=#000000
 hi Character    gui=none    guibg=#efdcce  guifg=#502010
 hi Comment      gui=italic  guibg=#fff2ff  guifg=#a02050
@@ -19,10 +19,8 @@ hi Exception    gui=bold    guibg=#fff0f0  guifg=#f00020
 hi Folded       gui=italic  guibg=#f0f0f0  guifg=#444444
 hi Identifier   gui=none    guibg=#e0f0ff  guifg=#002060
 hi Ignore       gui=none    guibg=#e0e8f0  guifg=#0000ff
-hi Keyword      gui=italic                 guifg=#000000
 hi LineNr       gui=none    guibg=#f0f0f0  guifg=#999999
 hi NonText      gui=none    guibg=#d5e3f0  guifg=#666666
-hi Normal       gui=none    guibg=#ffffff  guifg=#000000
 hi Number       gui=none    guibg=#e5ffe5  guifg=#005010
 hi Operator     gui=bold                   guifg=#000000
 hi PreProc      gui=bold                   guifg=#000000
@@ -34,10 +32,20 @@ hi Type         gui=bold                   guifg=#0080d0
 
 hi! link Directory Type
 
+hi jsClassKeyword   gui=none                 guifg=#666666
+
+hi! link jsExtendsKeyword jsClassKeyword
+hi! link jsThis           jsClassKeyword
+hi! link jsClassFuncName  Type
+hi! link jsArrowFunction  Type
+hi! link jsModules        Statement
+
+hi jsExportDefault            guibg=#f0f0f0  guifg=#d00070
+
 hi lessInclude  gui=none                   guifg=#DF6936
 hi lessId       gui=bold                   guifg=#DF6936
-hi! link lessIdChar lessId
 hi lessVariable gui=bold                   guifg=#42A282
+hi! link lessIdChar lessId
 
 hi Cursor       gui=inverse guifg=#ff9933
 hi CursorLine   gui=none    guibg=#f9f9f0

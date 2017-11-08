@@ -72,7 +72,8 @@ let g:alduin_Shout_Fire_Breath = 1 "adds dark red color
 " #==--- light colorschemes ------- --  -
 set background=light
 "colorscheme snowcrystal
-colorscheme zeroOne-Light
+" colorscheme zeroOne-Light
+colorscheme zeroOne-LightNew
 "colorscheme zeroOne-LightComic
 "colorscheme PaperColor
 
@@ -101,7 +102,7 @@ let g:pencil_terminal_italics = 1
 " dark theme
 " let g:airline_theme = 'powerlineish'
 " let g:airline_theme = 'base16_atelierlakeside'
-let g:airline_theme = 'dark_minimal'
+let g:airline_theme = 'onedark'
 
 " light theme
 " let g:airline_theme = 'kalisi'
