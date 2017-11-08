@@ -1,5 +1,7 @@
 " gui_macvim
 
+set shell=/usr/local/bin/bash
+
 set macligatures
 
 let macvim_skip_cmd_opt_movement=1
@@ -71,11 +73,12 @@ let g:alduin_Shout_Fire_Breath = 1 "adds dark red color
 
 " #==--- light colorschemes ------- --  -
 set background=light
-"colorscheme snowcrystal
-" colorscheme zeroOne-Light
-colorscheme zeroOne-LightNew
-"colorscheme zeroOne-LightComic
 "colorscheme PaperColor
+"colorscheme snowcrystal
+"colorscheme zeroOne-Light
+"colorscheme zeroOne-LightComic
+" colorscheme zeroOne-LightNew
+colorscheme zeroOne-Slash
 
 let g:one_allow_italics = 1 " I love italic for comments
 " colorscheme one  " BEST EVER light one!!
