@@ -32,9 +32,9 @@ set lines=32 columns=139
 
 
 " #==--- dark colorschemes ------- --  -
-"set background=dark
+set background=dark
 "colorscheme molokayo
-"colorscheme zeroOne-Dark
+colorscheme zeroOne-Dark
 "colorscheme OceanicNext
 "colorscheme PaperColor
 "colorscheme base16-tomorrow-night
@@ -72,13 +72,13 @@ let g:alduin_Shout_Fire_Breath = 1 "adds dark red color
 "colorscheme sidonia
 
 " #==--- light colorschemes ------- --  -
-set background=light
+" set background=light
 "colorscheme PaperColor
 "colorscheme snowcrystal
 "colorscheme zeroOne-Light
 "colorscheme zeroOne-LightComic
 " colorscheme zeroOne-LightNew
-colorscheme zeroOne-Slash
+" colorscheme zeroOne-Slash
 
 let g:one_allow_italics = 1 " I love italic for comments
 " colorscheme one  " BEST EVER light one!!
@@ -104,8 +104,8 @@ let g:pencil_terminal_italics = 1
 
 " dark theme
 " let g:airline_theme = 'powerlineish'
-" let g:airline_theme = 'base16_atelierlakeside'
-let g:airline_theme = 'onedark'
+let g:airline_theme = 'base16_atelierlakeside'
+" let g:airline_theme = 'onedark'
 
 " light theme
 " let g:airline_theme = 'kalisi'
