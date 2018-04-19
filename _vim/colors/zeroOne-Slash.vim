@@ -22,18 +22,18 @@ let s:pink_nearky_white = { "gui": "#fff0f8" }
 let s:purple            = { "gui": "#535599" }
 let s:red               = { "gui": "#C9379C" }
 
-let s:bg                = { "gui": "#d9ece2" }
+let s:bg                = { "gui": "#d9ecf2" }
 let s:bg_a              = { "gui": "#cde4df" }
 let s:bg_b              = { "gui": "#bedbd5" }
 let s:bg_c              = { "gui": "#b8d6c9" }
 
-let s:norm              = { "gui": "#646464" }
+let s:norm              = { "gui": "#445464" }
 let s:not_norm          = { "gui": "#767676" }
 let s:statement         = { "gui": "#2775ad" }
 let s:identifier        = { "gui": "#000000" }
 let s:constant          = { "gui": "#F000A0" }
-let s:string            = { "gui": "#666666" }
-let s:string_bg         = { "gui": "#F7F5DD" }
+let s:string            = { "gui": "#C41A51" }
+let s:string_bg         = { "gui": "#ffffea" }
 let s:comment           = { "gui": "#5292B2" }
 let s:comment_bg        = { "gui": "#F0F7FF" }
 let s:comment_bg_inner  = { "gui": "#EAF1FF" }

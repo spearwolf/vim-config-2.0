@@ -1,5 +1,5 @@
 " #-- vim-colorscheme -=* zeroOne-Dark *=- ----- --- --  -
-" Created 2016-17 by wolfger@spearwolf.de
+" Created 2016-18 by wolfger@spearwolf.de
 " O==#=====-===---=---------------------------- --- --  -
 
 " TODO publish this colortheme ;-)
@@ -38,6 +38,10 @@ let s:identifier        = { "gui": "#ecece8" }
 let s:constant          = { "gui": "#ffaa33" }
 
 let s:string            = { "gui": "#C33571" }
+let s:js_templ_bg       = { "gui": "#000000" }
+let s:js_templ_str      = { "gui": "#A0A0A0" }
+let s:js_templ_braces   = { "gui": "#D00A40" }
+let s:js_templ_expr     = { "gui": "#EC610A" }
 
 let s:comment           = { "gui": "#42a282" }
 let s:comment_bg        = { "gui": "#203028" }
@@ -219,6 +223,9 @@ call s:h("jsNumber",                {"fg": { "gui": "#DF6936" }})
 call s:h("jsObjectKey",             {"fg": { "gui": "#a4a4a4" }})
 call s:h("jsObjectKeyComputed",     {"fg": { "gui": "#a4a4a4" }})
 call s:h("jsSuper",                 {"bg": s:black, "fg": s:statement, "gui": "bold"})
+call s:h("jsTemplateString",        {"fg": s:js_templ_str, "bg": s:js_templ_bg })
+call s:h("jsTemplateBraces",        {"fg": s:js_templ_braces, "bg": s:js_templ_bg })
+call s:h("jsTemplateExpression",    {"fg": s:js_templ_expr, "bg": s:js_templ_bg })
 
 hi link jsonString                  Normal
 

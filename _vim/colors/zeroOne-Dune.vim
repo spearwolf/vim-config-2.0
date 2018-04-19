@@ -13,7 +13,8 @@ let g:colors_name = 'zeroOne-Dune'
 
 " =====================-==---=--------------- --   -  -
 
-let s:bg                = { "gui": "#FDFAF6" }
+" let s:bg                = { "gui": "#FDFAF6" }
+let s:bg                = { "gui": "#FCFBF6" }
 let s:bg_b              = { "gui": "#ECF4EE" }
 let s:bg_c              = { "gui": "#EDEAE6" }
 let s:blue              = { "gui": "#20BBFC" }
@@ -30,9 +31,9 @@ let s:statement         = { "gui": "#548EB4" }
 let s:identifier        = { "gui": "#000000" }
 let s:constant          = { "gui": "#F000A0" }
 let s:string            = { "gui": "#B2588A" }
-let s:string_bg         = { "gui": "#FDFAF6" }
+let s:string_bg         = { "gui": "#FFFFFF" }
 let s:comment           = { "gui": "#6F8E69" }
-let s:comment_bg        = { "gui": "#FDFAF6" }
+let s:comment_bg        = { "gui": "#F5FFF7" }
 let s:comment_bg_inner  = { "gui": "#EAF1FF" }
 let s:cursor            = { "gui": "#225544" }
 let s:cursor_bg         = { "gui": "#66FF99" }

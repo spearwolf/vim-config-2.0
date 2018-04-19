@@ -74,6 +74,7 @@ set magic
 
 " No annoying sound on errors
 set noerrorbells
+set belloff=all
 set novisualbell
 set t_vb=
 set tm=500
