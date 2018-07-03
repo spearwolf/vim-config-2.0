@@ -11,13 +11,15 @@ map <silent> <S-A-w> <Esc>:bw!<CR>
 
 let g:enable_bold_font = 1
 
-set guifont=Monospace\ 13
-"set guifont=Go\ Mono\ 14
+"set guifont=Monospace\ 13
+" set guifont=Go\ Mono\ 13
 "set guifont=Courier\ 10\ Pitch\ 11
-set linespace=0
+set guifont=Inconsolata\ 13
+set linespace=2
 
 "set lines=30 columns=105
-set lines=42 columns=130
+" set lines=42 columns=130
+set lines=41 columns=142
 
 " #==--- dark colorschemes ------- --  -
 "set background=dark
@@ -47,7 +49,8 @@ set background=light
 "colorscheme zeroOne-Light
 "colorscheme zeroOne-LightComic
 "colorscheme PaperColor
-colorscheme one
+" colorscheme one
+colorscheme base16-atelier-seaside-light
 hi SignColumn guibg=NONE
 
 " light theme
