@@ -16,7 +16,17 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'ajh17/VimCompletesMe'
-Plug 'Shougo/neocomplete.vim'
+
+" Plug 'Shougo/neocomplete.vim'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'godlygeek/tabular'
@@ -59,11 +69,11 @@ Plug 'reedes/vim-colors-pencil'
 Plug 'scheakur/vim-scheakur'
 Plug 'carakan/new-railscasts-theme'
 Plug 'joshdick/onedark.vim'
-Plug 'atelierbram/Base2Tone-vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'trevordmiller/nova-vim'
 
 " sorted out colorschemes:
+" Plug 'atelierbram/Base2Tone-vim'
 " Plug 'fxn/vim-monochrome'
 " Plug 'dracula/vim'
 " Plug 'AlessandroYorba/Sierra'
@@ -105,7 +115,9 @@ call plug#end()
 
 silent! helptags ALL
 
-runtime! rc.d/neocomplete.vim
+" runtime! rc.d/neocomplete.vim
+runtime! rc.d/deoplete.vim
+
 runtime! rc.d/nerdtree.vim
 runtime! rc.d/ctrlp.vim
 runtime! rc.d/snippets.vim

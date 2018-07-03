@@ -15,11 +15,13 @@ map <silent> <M-D-Right> gt
 "set guifont=Literation\ Mono\ Powerline\ Nerd\ Font\ Complete:h14
 "set guifont=Roboto\ Mono:h14
 "set guifont=Go\ Mono:h15
-set guifont=Latin\ Modern\ Mono\ 10\ Regular:h16
-set linespace=1
+" set guifont=Latin\ Modern\ Mono\ 10\ Regular:h16
+set guifont=Dank\ Mono\ Regular:h15
+" set linespace=1
 "set linespace=3
+set linespace=4
 
-let g:enable_bold_font = 1
+let g:enable_bold_font = 0
 
 " set transparency=6
 set transparency=4
@@ -64,11 +66,11 @@ let g:alduin_Shout_Fire_Breath = 1 "adds dark red color
 set background=light
 " colorscheme PaperColor
 " colorscheme gruvbox
-colorscheme scheakur
+" colorscheme scheakur
 " colorscheme snowcrystal
 " colorscheme zeroOne-Light
 " colorscheme zeroOne-LightComic
-" colorscheme zeroOne-LightNew
+colorscheme zeroOne-LightNew
 " colorscheme zeroOne-Slash
 " colorscheme zeroOne-Dune
 
@@ -78,16 +80,18 @@ let g:one_allow_italics = 1 " I love italic for comments
 
 " pencil colorscheme config
 let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
-let g:pencil_neutral_headings = 0   " 0=blue (def), 1=normal
-let g:pencil_neutral_code_bg = 1   " 0=gray (def), 1=normal
+let g:pencil_neutral_headings = 1   " 0=blue (def), 1=normal
+let g:pencil_neutral_code_bg = 0   " 0=gray (def), 1=normal
 let g:pencil_spell_undercurl = 1       " 0=underline, 1=undercurl (def)
 let g:pencil_terminal_italics = 1
+" colorscheme pencil
 
 let g:monochrome_italic_comments = 1
 
 " #==--- dark colorschemes ------- --  -
 " set background=dark
 " colorscheme alduin
+" colorscheme gruvbox
 "colorscheme Apprentice
 " colorscheme base16-grayscale-dark
 "colorscheme monochrome
@@ -104,6 +108,7 @@ let g:monochrome_italic_comments = 1
 " let g:airline_theme = 'onedark'
 
 " light theme
-" let g:airline_theme = 'kalisi'
-let g:airline_theme = 'one'
+let g:airline_theme = 'kalisi'
+" let g:airline_theme = 'one'
+" let g:airline_theme = 'laederon'
 

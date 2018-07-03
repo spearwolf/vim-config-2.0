@@ -3,6 +3,9 @@ scriptencoding utf-8
 set encoding=utf-8
 set termencoding=utf-8
 
+set pyx=3
+set pyxversion=3
+
 set foldmethod=marker
 
 set hlsearch
