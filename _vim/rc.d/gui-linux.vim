@@ -1,4 +1,4 @@
-" gui_gtk2
+" gui_gtk2/3
 
 " New tab Shift-Alt-t
 map <silent> <S-A-t> <Esc>:tabnew<CR>
@@ -12,9 +12,9 @@ map <silent> <S-A-w> <Esc>:bw!<CR>
 let g:enable_bold_font = 1
 
 "set guifont=Monospace\ 13
-" set guifont=Go\ Mono\ 13
-"set guifont=Courier\ 10\ Pitch\ 11
-set guifont=Inconsolata\ 13
+" set guifont=Go\ Mono\ 13 set guifont=Courier\ 10\ Pitch\ 11
+set guifont=Ubuntu\ Mono\ 12
+" set guifont=Inconsolata\ 13
 set linespace=2
 
 "set lines=30 columns=105
@@ -44,15 +44,20 @@ let g:pencil_terminal_italics = 1
 
 
 " #==--- light colorschemes ------- --  -
-set background=light
+" set background=light
 "colorscheme snowcrystal
 "colorscheme zeroOne-Light
 "colorscheme zeroOne-LightComic
-"colorscheme PaperColor
+" colorscheme PaperColor
 " colorscheme one
-colorscheme base16-atelier-seaside-light
-hi SignColumn guibg=NONE
+" colorscheme base16-atelier-seaside-light
+" hi SignColumn guibg=NONE
+
+" #==--- light colorschemes ------- --  -
+set background=dark
+colorscheme zeroOne-Dark
 
 " light theme
-let g:airline_theme = 'kalisi'
+" let g:airline_theme = 'kalisi'
+let g:airline_theme = 'powerlineish'
 

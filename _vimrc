@@ -52,6 +52,7 @@ Plug 'tpope/vim-markdown'
 Plug 'mustache/vim-mustache-handlebars'
 " Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
 Plug 'digitaltoad/vim-pug'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
@@ -133,11 +134,15 @@ runtime! rc.d/nerdcommenter.vim
 runtime! rc.d/neoformat.vim
 runtime! rc.d/rainbow.vim
 runtime! rc.d/emmet.vim
+runtime! rc.d/tsuquyomi.vim
 " runtime! rc.d/indent-guides.vim
 
 if has("gui_running")
     runtime! rc.d/gui.vim
     if has("gui_gtk2")
+        runtime! rc.d/gui-linux.vim
+    endif
+    if has("gui_gtk3")
         runtime! rc.d/gui-linux.vim
     endif
     if has("gui_macvim")
