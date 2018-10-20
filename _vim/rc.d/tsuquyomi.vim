@@ -13,3 +13,6 @@ autocmd FileType typescript nmap <buffer> <Leader>r <Plug>(TsuquyomiRenameSymbol
 
 set ballooneval
 autocmd FileType typescript setlocal balloonexpr=tsuquyomi#balloonexpr()
+
+" Integrate with syntastic
+let g:tsuquyomi_disable_quickfix = 1

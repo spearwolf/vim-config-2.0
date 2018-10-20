@@ -15,7 +15,7 @@ let g:enable_bold_font = 1
 " set guifont=Go\ Mono\ 13
 " set guifont=Courier\ 10\ Pitch\ 11
 " set guifont=Ubuntu\ Mono\ 14
-set guifont=Fira\ Code\ 12
+set guifont=Fira\ Code\ 13
 " set guifont=Inconsolata\ 13
 set linespace=4
 
@@ -58,9 +58,15 @@ let g:pencil_terminal_italics = 1
 " #==--- light colorschemes ------- --  -
 set background=dark
 " colorscheme zeroOne-Dark
+
 colorscheme base16-grayscale-dark
+hi SignColumn guibg=NONE
+hi VertSplit guibg=NONE
+hi Visual term=reverse ctermbg=11 guibg=#205060
+hi Error term=reverse ctermfg=0 ctermbg=0 guibg=#440000 guifg=#ff3300
 
 " light theme
 " let g:airline_theme = 'kalisi'
 let g:airline_theme = 'powerlineish'
+" let g:airline_theme = 'minimalist'
 

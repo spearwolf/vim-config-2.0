@@ -8,8 +8,8 @@ runtime! rc.d/wildignore.vim
 call plug#begin('~/.vim/plugged')
 
 " snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
 
 " features
 Plug 'tpope/vim-sensible'
@@ -17,17 +17,19 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
 " Plug 'Shougo/neocomplete.vim'
-Plug 'ajh17/VimCompletesMe'
-" Plug 'Valloric/YouCompleteMe'
+" Plug 'ajh17/VimCompletesMe'
+Plug 'Valloric/YouCompleteMe'
+" Plug 'vim-syntastic/syntastic'
+Plug 'w0rp/ale'
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+" if has('nvim')
+  " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+  " Plug 'Shougo/deoplete.nvim'
+  " Plug 'roxma/nvim-yarp'
+  " Plug 'roxma/vim-hug-neovim-rpc'
+" endif
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
@@ -38,7 +40,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'gorkunov/smartpairs.vim'
 Plug 'mattn/emmet-vim'
-Plug 'w0rp/ale'
 Plug 'sbdchd/neoformat'
 
 " language features
@@ -46,19 +47,19 @@ Plug 'tpope/vim-git'
 Plug 'vim-ruby/vim-ruby'
 Plug 'moll/vim-node'
 Plug 'pangloss/vim-javascript'
-" Plug 'maxmellon/vim-jsx-pretty'
 Plug 'jparise/vim-graphql'
 Plug 'othree/html5.vim'
 Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'mustache/vim-mustache-handlebars'
-" Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 Plug 'digitaltoad/vim-pug'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'luochen1990/rainbow'
+" Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'mxw/vim-jsx'
 
 " colorschemes
 Plug 'AlessandroYorba/Alduin'
@@ -69,12 +70,12 @@ Plug 'pbrisbin/vim-colors-off'
 Plug 'rakr/vim-one'
 Plug 'reedes/vim-colors-pencil'
 Plug 'scheakur/vim-scheakur'
-Plug 'carakan/new-railscasts-theme'
 Plug 'joshdick/onedark.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'trevordmiller/nova-vim'
 
 " sorted out colorschemes:
+" Plug 'carakan/new-railscasts-theme'
 " Plug 'atelierbram/Base2Tone-vim'
 " Plug 'fxn/vim-monochrome'
 " Plug 'dracula/vim'
@@ -118,16 +119,15 @@ call plug#end()
 silent! helptags ALL
 
 " runtime! rc.d/neocomplete.vim
-runtime! rc.d/deoplete.vim
+" runtime! rc.d/deoplete.vim
 
 runtime! rc.d/nerdtree.vim
 runtime! rc.d/ctrlp.vim
-runtime! rc.d/snippets.vim
+" runtime! rc.d/snippets.vim
 runtime! rc.d/syntax.vim
 runtime! rc.d/quickfix.vim
 runtime! rc.d/last-cursor-position.vim
 runtime! rc.d/remove-trailing-whitespaces.vim
-runtime! rc.d/ale.vim
 runtime! rc.d/key-mappings.vim
 runtime! rc.d/complete.vim
 runtime! rc.d/jsx.vim
@@ -136,6 +136,8 @@ runtime! rc.d/nerdcommenter.vim
 runtime! rc.d/neoformat.vim
 runtime! rc.d/rainbow.vim
 runtime! rc.d/emmet.vim
+runtime! rc.d/ale.vim
+" runtime! rc.d/syntastic.vim
 runtime! rc.d/tsuquyomi.vim
 " runtime! rc.d/indent-guides.vim
 

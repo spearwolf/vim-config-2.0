@@ -96,7 +96,8 @@ set background=dark
 colorscheme base16-grayscale-dark
 hi SignColumn guibg=NONE
 hi VertSplit guibg=NONE
-" colorscheme monochrome
+hi Visual term=reverse ctermbg=11 guibg=#205060
+hi Error term=reverse ctermfg=0 ctermbg=0 guibg=#440000 guifg=#ff3300
 
 " o===)-------- -
 " airline
@@ -105,8 +106,8 @@ hi VertSplit guibg=NONE
 " let g:airline_theme='one'
 
 " dark theme
-" let g:airline_theme = 'powerlineish'
-let g:airline_theme = 'minimalist'
+let g:airline_theme = 'powerlineish'
+" let g:airline_theme = 'minimalist'
 " let g:airline_theme = 'base16_atelierlakeside'
 " let g:airline_theme = 'onedark'
 

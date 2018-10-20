@@ -26,7 +26,11 @@ let g:ale_completion_enabled = 1
 
 "let g:ale_linters = { 'javascript': ['jshint', 'eslint', 'standard'] }
 "let g:ale_linters = { 'javascript': ['standard'] }
-let g:ale_linters = { 'javascript': ['eslint', 'flow'], 'html': ['tidy'], 'css': ['stylelint'], 'typescript': ['tslint'] }
+let g:ale_linters = { 'javascript': ['eslint', 'flow'], 'html': ['tidy'], 'css': ['stylelint'], 'typescript': ['tslint', 'tsserver', 'typecheck'] }
+
+let g:ale_fixers = {
+\   '*': ['trim_whitespace'],
+\}
 
 let g:ale_html_tidy_options = '-q -e -language en -config .tidy.conf'
 
