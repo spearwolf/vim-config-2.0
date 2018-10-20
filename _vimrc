@@ -15,9 +15,11 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'ajh17/VimCompletesMe'
 
 " Plug 'Shougo/neocomplete.vim'
+Plug 'ajh17/VimCompletesMe'
+" Plug 'Valloric/YouCompleteMe'
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else

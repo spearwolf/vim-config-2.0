@@ -63,14 +63,14 @@ let g:alduin_Shout_Fire_Breath = 1 "adds dark red color
 "colorscheme sidonia
 
 " #==--- light colorschemes ------- --  -
-set background=light
+" set background=light
 " colorscheme PaperColor
 " colorscheme gruvbox
 " colorscheme scheakur
 " colorscheme snowcrystal
 " colorscheme zeroOne-Light
 " colorscheme zeroOne-LightComic
-colorscheme zeroOne-LightNew
+" colorscheme zeroOne-LightNew
 " colorscheme zeroOne-Slash
 " colorscheme zeroOne-Dune
 
@@ -89,12 +89,14 @@ let g:pencil_terminal_italics = 1
 let g:monochrome_italic_comments = 1
 
 " #==--- dark colorschemes ------- --  -
-" set background=dark
+set background=dark
 " colorscheme alduin
 " colorscheme gruvbox
 "colorscheme Apprentice
-" colorscheme base16-grayscale-dark
-"colorscheme monochrome
+colorscheme base16-grayscale-dark
+hi SignColumn guibg=NONE
+hi VertSplit guibg=NONE
+" colorscheme monochrome
 
 " o===)-------- -
 " airline
@@ -104,11 +106,12 @@ let g:monochrome_italic_comments = 1
 
 " dark theme
 " let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'minimalist'
 " let g:airline_theme = 'base16_atelierlakeside'
 " let g:airline_theme = 'onedark'
 
 " light theme
-let g:airline_theme = 'kalisi'
+" let g:airline_theme = 'kalisi'
 " let g:airline_theme = 'one'
 " let g:airline_theme = 'laederon'
 
