@@ -12,10 +12,12 @@ map <silent> <S-A-w> <Esc>:bw!<CR>
 let g:enable_bold_font = 1
 
 "set guifont=Monospace\ 13
-" set guifont=Go\ Mono\ 13 set guifont=Courier\ 10\ Pitch\ 11
-set guifont=Ubuntu\ Mono\ 12
+" set guifont=Go\ Mono\ 13
+" set guifont=Courier\ 10\ Pitch\ 11
+" set guifont=Ubuntu\ Mono\ 14
+set guifont=Fira\ Code\ 12
 " set guifont=Inconsolata\ 13
-set linespace=2
+set linespace=4
 
 "set lines=30 columns=105
 " set lines=42 columns=130
@@ -55,7 +57,8 @@ let g:pencil_terminal_italics = 1
 
 " #==--- light colorschemes ------- --  -
 set background=dark
-colorscheme zeroOne-Dark
+" colorscheme zeroOne-Dark
+colorscheme base16-grayscale-dark
 
 " light theme
 " let g:airline_theme = 'kalisi'
