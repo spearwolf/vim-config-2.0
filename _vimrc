@@ -41,6 +41,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'gorkunov/smartpairs.vim'
 Plug 'mattn/emmet-vim'
 Plug 'sbdchd/neoformat'
+Plug 'junegunn/vim-emoji'
 
 " language features
 Plug 'tpope/vim-git'
@@ -139,6 +140,7 @@ runtime! rc.d/emmet.vim
 runtime! rc.d/ale.vim
 " runtime! rc.d/syntastic.vim
 runtime! rc.d/tsuquyomi.vim
+runtime! rc.d/ycm.vim
 " runtime! rc.d/indent-guides.vim
 
 if has("gui_running")

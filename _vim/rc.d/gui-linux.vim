@@ -1,5 +1,17 @@
 " gui_gtk2/3
 
+" ale
+let g:ale_sign_error = '😠'
+let g:ale_sign_warning = '💣'
+" 💥
+" 💣
+" 😱
+" 😠
+" 💥
+" 💣
+" 💀
+" 🤢
+
 " New tab Shift-Alt-t
 map <silent> <S-A-t> <Esc>:tabnew<CR>
 " Wipe tab
@@ -15,7 +27,7 @@ let g:enable_bold_font = 1
 " set guifont=Go\ Mono\ 13
 " set guifont=Courier\ 10\ Pitch\ 11
 " set guifont=Ubuntu\ Mono\ 14
-set guifont=Fira\ Code\ 13
+set guifont=Fira\ Code\ 12
 " set guifont=Inconsolata\ 13
 set linespace=4
 

@@ -1,7 +1,9 @@
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
+" \   'guifgs': ['#6B0848', '#A40A3C', '#EC610A', '#FFC300'],
+
 let g:rainbow_conf = {
-\   'guifgs': ['#6B0848', '#A40A3C', '#EC610A', '#FFC300'],
+\   'guifgs': ['#6B0848', '#861043', '#D62828', '#F19A15', '#FFC300', '#B3C217', '#38AB3A', '#1A7780'],
 \   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
 \   'operators': '_,_',
 \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
