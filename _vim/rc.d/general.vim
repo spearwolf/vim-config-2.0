@@ -12,6 +12,10 @@ set hlsearch
 set incsearch
 set smartcase
 
+" show line numers
+set number
+set relativenumber
+
 " Turn backup off
 set nobackup
 set nowritebackup

@@ -4,6 +4,19 @@ set shell=/usr/local/bin/bash
 
 set macligatures
 
+" ale
+let g:ale_sign_error = '💥'
+let g:ale_sign_warning = '😱'
+" 💥
+" 💣
+" 😱
+" 😠
+" 💥
+" 💣
+" 💀
+" 🤢
+" 😠
+
 let macvim_skip_cmd_opt_movement=1
 " Navigate between tabs: ctrl+alt+(left|right)
 " map <silent> <C-M-Left> gT
@@ -19,7 +32,7 @@ map <silent> <M-D-Right> gt
 set guifont=Dank\ Mono\ Regular:h15
 " set linespace=1
 "set linespace=3
-set linespace=4
+set linespace=2
 
 let g:enable_bold_font = 0
 
@@ -93,11 +106,13 @@ set background=dark
 " colorscheme alduin
 " colorscheme gruvbox
 "colorscheme Apprentice
+
 colorscheme base16-grayscale-dark
 hi SignColumn guibg=NONE
 hi VertSplit guibg=NONE
 hi Visual term=reverse ctermbg=11 guibg=#205060
 hi Error term=reverse ctermfg=0 ctermbg=0 guibg=#440000 guifg=#ff3300
+hi LineNr ctermfg=9 guibg=#161616 guifg=#3a3a3a
 
 " o===)-------- -
 " airline
@@ -106,7 +121,8 @@ hi Error term=reverse ctermfg=0 ctermbg=0 guibg=#440000 guifg=#ff3300
 " let g:airline_theme='one'
 
 " dark theme
-let g:airline_theme = 'powerlineish'
+" let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'luna'
 " let g:airline_theme = 'minimalist'
 " let g:airline_theme = 'base16_atelierlakeside'
 " let g:airline_theme = 'onedark'

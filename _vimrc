@@ -132,7 +132,6 @@ runtime! rc.d/remove-trailing-whitespaces.vim
 runtime! rc.d/key-mappings.vim
 runtime! rc.d/complete.vim
 runtime! rc.d/jsx.vim
-runtime! rc.d/airline.vim
 runtime! rc.d/nerdcommenter.vim
 runtime! rc.d/neoformat.vim
 runtime! rc.d/rainbow.vim
@@ -142,6 +141,7 @@ runtime! rc.d/ale.vim
 runtime! rc.d/tsuquyomi.vim
 runtime! rc.d/ycm.vim
 " runtime! rc.d/indent-guides.vim
+runtime! rc.d/airline.vim
 
 if has("gui_running")
     runtime! rc.d/gui.vim
