@@ -29,22 +29,24 @@ map <silent> <M-D-Right> gt
 "set guifont=Roboto\ Mono:h14
 "set guifont=Go\ Mono:h15
 " set guifont=Latin\ Modern\ Mono\ 10\ Regular:h16
-set guifont=Dank\ Mono\ Regular:h15
+set guifont=Dank\ Mono\ Regular:h17
 " set linespace=1
 "set linespace=3
-set linespace=2
+" set linespace=2
+set linespace=0
 
-let g:enable_bold_font = 0
+let g:enable_bold_font = 1
 
 " set transparency=6
 set transparency=4
 " set blurradius=3
 
-set lines=32 columns=139
+" set lines=32 columns=139
 " set lines=42 columns=128
 " set lines=32 columns=144
 " set lines=36 columns=130
 " set lines=30 columns=130
+set lines=32 columns=128
 
 
 " #==--- dark colorschemes ------- --  -
@@ -101,18 +103,20 @@ let g:pencil_terminal_italics = 1
 
 let g:monochrome_italic_comments = 1
 
+" theme === {{{
+"
 " #==--- dark colorschemes ------- --  -
-set background=dark
+" set background=dark
 " colorscheme alduin
 " colorscheme gruvbox
 "colorscheme Apprentice
 
-colorscheme base16-grayscale-dark
-hi SignColumn guibg=NONE
-hi VertSplit guibg=NONE
-hi Visual term=reverse ctermbg=11 guibg=#205060
-hi Error term=reverse ctermfg=0 ctermbg=0 guibg=#440000 guifg=#ff3300
-hi LineNr ctermfg=9 guibg=#161616 guifg=#3a3a3a
+" colorscheme base16-grayscale-dark
+" hi SignColumn guibg=NONE
+" hi VertSplit guibg=NONE
+" hi Visual term=reverse ctermbg=11 guibg=#205060
+" hi Error term=reverse ctermfg=0 ctermbg=0 guibg=#440000 guifg=#ff3300
+" hi LineNr ctermfg=9 guibg=#161616 guifg=#3a3a3a
 
 " o===)-------- -
 " airline
@@ -122,13 +126,17 @@ hi LineNr ctermfg=9 guibg=#161616 guifg=#3a3a3a
 
 " dark theme
 " let g:airline_theme = 'powerlineish'
-let g:airline_theme = 'luna'
+" let g:airline_theme = 'luna'
 " let g:airline_theme = 'minimalist'
 " let g:airline_theme = 'base16_atelierlakeside'
 " let g:airline_theme = 'onedark'
+" let g:airline_theme = 'hybrid'
 
 " light theme
 " let g:airline_theme = 'kalisi'
 " let g:airline_theme = 'one'
 " let g:airline_theme = 'laederon'
+"
+" --- }}}
 
+runtime! rc.d/dark-theme.vim
