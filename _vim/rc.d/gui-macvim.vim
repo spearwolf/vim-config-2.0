@@ -29,11 +29,10 @@ map <silent> <M-D-Right> gt
 "set guifont=Roboto\ Mono:h14
 "set guifont=Go\ Mono:h15
 " set guifont=Latin\ Modern\ Mono\ 10\ Regular:h16
-set guifont=Dank\ Mono\ Regular:h17
+set guifont=Dank\ Mono\ Regular:h15
 " set linespace=1
-"set linespace=3
+set linespace=3
 " set linespace=2
-set linespace=0
 
 let g:enable_bold_font = 1
 
