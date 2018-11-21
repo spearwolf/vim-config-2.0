@@ -6,6 +6,7 @@ set nonumber
 set nocursorline
 
 set guioptions=heagm
+"m - menu
 
-set guitablabel=%m%f
+set guitablabel=%f%m
 

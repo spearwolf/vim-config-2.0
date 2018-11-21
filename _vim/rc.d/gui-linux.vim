@@ -1,5 +1,8 @@
 " gui_gtk2/3
 
+set guioptions-=m
+set guioptions+=i
+
 " ale
 let g:ale_sign_error = '😠'
 let g:ale_sign_warning = '💣'
@@ -23,12 +26,13 @@ map <silent> <S-A-w> <Esc>:bw!<CR>
 
 let g:enable_bold_font = 1
 
-"set guifont=Monospace\ 13
 " set guifont=Go\ Mono\ 13
 " set guifont=Courier\ 10\ Pitch\ 11
 " set guifont=Ubuntu\ Mono\ 14
-set guifont=Fira\ Code\ 12
+" set guifont=Fira\ Code\ 12
 " set guifont=Inconsolata\ 13
+" set guifont=Monospace\ 10
+" set linespace=4
 set linespace=4
 
 "set lines=30 columns=105
@@ -56,7 +60,8 @@ let g:pencil_neutral_code_bg = 1   " 0=gray (def), 1=normal
 let g:pencil_spell_undercurl = 1       " 0=underline, 1=undercurl (def)
 let g:pencil_terminal_italics = 1
 
-
+" theme === {{{
+"
 " #==--- light colorschemes ------- --  -
 " set background=light
 "colorscheme snowcrystal
@@ -68,17 +73,20 @@ let g:pencil_terminal_italics = 1
 " hi SignColumn guibg=NONE
 
 " #==--- light colorschemes ------- --  -
-set background=dark
+" set background=dark
 " colorscheme zeroOne-Dark
 
-colorscheme base16-grayscale-dark
-hi SignColumn guibg=NONE
-hi VertSplit guibg=NONE
-hi Visual term=reverse ctermbg=11 guibg=#205060
-hi Error term=reverse ctermfg=0 ctermbg=0 guibg=#440000 guifg=#ff3300
+" colorscheme base16-grayscale-dark
+" hi SignColumn guibg=NONE
+" hi VertSplit guibg=NONE
+" hi Visual term=reverse ctermbg=11 guibg=#205060
+" hi Error term=reverse ctermfg=0 ctermbg=0 guibg=#440000 guifg=#ff3300
 
 " light theme
 " let g:airline_theme = 'kalisi'
-let g:airline_theme = 'powerlineish'
+" let g:airline_theme = 'powerlineish'
 " let g:airline_theme = 'minimalist'
+"
+" --- }}}
 
+runtime! rc.d/dark-theme.vim
