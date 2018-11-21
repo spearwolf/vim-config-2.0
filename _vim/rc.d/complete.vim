@@ -1,5 +1,6 @@
 
-set completeopt=menu,preview
+set completeopt=menu
+" set completeopt=menu,preview
 
 " http://vim.wikia.com/wiki/VimTip1228
 inoremap <expr> <CR>       pumvisible() ? "\<C-e>" : "\<CR>"
