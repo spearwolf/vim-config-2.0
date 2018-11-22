@@ -9,7 +9,7 @@
 let g:tsuquyomi_completion_detail = 0
 
 " autocmd FileType typescript setlocal completeopt+=menu,preview
-autocmd FileType typescript setlocal completeopt+=menu
+autocmd FileType typescript setlocal completeopt+=menu,noinsert
 
 autocmd FileType typescript nmap <buffer> <Leader>r <Plug>(TsuquyomiRenameSymbolC)
 
