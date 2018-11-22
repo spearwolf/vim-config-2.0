@@ -59,6 +59,7 @@ Plug 'digitaltoad/vim-pug'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'luochen1990/rainbow'
+Plug 'dag/vim-fish'
 " Plug 'maxmellon/vim-jsx-pretty'
 " Plug 'mxw/vim-jsx'
 
