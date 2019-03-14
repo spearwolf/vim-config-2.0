@@ -5,7 +5,7 @@ set guioptions+=i
 
 " ale
 let g:ale_sign_error = '😠'
-let g:ale_sign_warning = '💣'
+let g:ale_sign_warning = '💥'
 " 💥
 " 💣
 " 😱
@@ -14,6 +14,7 @@ let g:ale_sign_warning = '💣'
 " 💣
 " 💀
 " 🤢
+" 🦄
 
 " New tab Shift-Alt-t
 map <silent> <S-A-t> <Esc>:tabnew<CR>
@@ -33,11 +34,11 @@ let g:enable_bold_font = 1
 " set guifont=Inconsolata\ 13
 " set guifont=Monospace\ 10
 " set linespace=4
-set linespace=4
+set linespace=5
 
 "set lines=30 columns=105
 " set lines=42 columns=130
-set lines=41 columns=142
+set lines=26 columns=120
 
 " #==--- dark colorschemes ------- --  -
 "set background=dark
@@ -89,4 +90,8 @@ let g:pencil_terminal_italics = 1
 "
 " --- }}}
 
-runtime! rc.d/dark-theme.vim
+" runtime! rc.d/dark-theme.vim
+
+set background=light
+colorscheme PaperColor
+let g:airline_theme = 'atomic'
