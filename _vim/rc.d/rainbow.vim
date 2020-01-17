@@ -1,4 +1,4 @@
-let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+let g:rainbow_active = 0 "0 if you want to enable it later via :RainbowToggle
 
 " \   'guifgs': ['#6B0848', '#A40A3C', '#EC610A', '#FFC300'],
 

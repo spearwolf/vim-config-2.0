@@ -2,6 +2,7 @@
 
 set guioptions-=m
 set guioptions+=i
+set guioptions+=d
 
 " ale
 let g:ale_sign_error = '😠'
@@ -34,7 +35,10 @@ let g:enable_bold_font = 1
 " set guifont=Inconsolata\ 13
 " set guifont=Monospace\ 10
 " set linespace=4
-set linespace=5
+" set linespace=5
+" set guifont=Fira\ Mono\ 10
+set guifont=Cascadia\ Code\ 10
+set linespace=6
 
 "set lines=30 columns=105
 " set lines=42 columns=130
@@ -92,6 +96,13 @@ let g:pencil_terminal_italics = 1
 
 " runtime! rc.d/dark-theme.vim
 
+" set background=dark
+" colorscheme PaperColor " one onedark PaperColor
+" let g:airline_theme = 'atomic'
+
+" set background=dark
+" colorscheme tender
 set background=light
-colorscheme PaperColor
-let g:airline_theme = 'atomic'
+colorscheme onehalflight
+let g:airline_theme = 'onehalfdark'
+

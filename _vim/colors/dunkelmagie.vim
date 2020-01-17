@@ -12,8 +12,9 @@ endif
 let g:colors_name = "dunkelmagie"
 
 hi Normal                       gui=none       guibg=#304055 guifg=#dddddd
-hi Statement                    gui=none       guibg=bg      guifg=#aaaaaa
-hi Type                         gui=bold       guibg=#AAD802 guifg=#005F00
+hi Statement                    gui=bold       guibg=bg      guifg=#aaaaaa
+" hi Type                         gui=bold       guibg=#AAD802 guifg=#005F00
+hi Type                         gui=bold       guibg=bg      guifg=#6090a0
 hi Special                      gui=none       guibg=bg      guifg=#888888
 hi javascriptLDot               gui=none       guibg=bg      guifg=#aaaaaa
 hi Identifier                   gui=none       guibg=#203043 guifg=#fff060
@@ -21,8 +22,9 @@ hi PreProc                      gui=none       guibg=#304050 guifg=#6080d0
 hi Title                        gui=bold       guibg=#17273a guifg=#ffffff
 hi Comment                      gui=italic     guibg=#203044 guifg=#607093
 
-hi Constant                     gui=none       guibg=#203055 guifg=#d10060
-hi Number                       gui=bold       guibg=#e0e0e0 guifg=#000000
+hi Constant                     gui=bold       guibg=#203055 guifg=#d10060
+" hi Number                       gui=bold       guibg=#e0e0e0 guifg=#000000
+hi Number                       gui=bold       guibg=#405060 guifg=#ddddee
 hi Boolean                      gui=bold       guibg=#e0e0e0 guifg=#000000
 hi Float                        gui=bold       guibg=#e0e0e0 guifg=#000000
 
@@ -38,12 +40,16 @@ hi javascriptSFunction          gui=none       guibg=#203044 guifg=#ffffff
 hi! link javascriptRTop javascriptSFunction
 hi! link javascriptAServices javascriptSFunction
 
+" hi Type                         gui=bold       guibg=#AAD802 guifg=#005F00
+hi typescriptFuncKeyword        gui=bold       guibg=#AAD802 guifg=#005F00
+hi typescriptBraces             gui=bold       guibg=#102033 guifg=#ccccdd
+
 hi NonText                      gui=none       guibg=#203043 guifg=#607090
 hi Cursor                                      guibg=#ffffff guifg=#ff0066
 hi CursorLine                                  guibg=#172737
 hi Visual                                      guibg=#405060
 hi LineNr                       gui=none       guibg=#08182c guifg=#304063
-hi SignColumn                   gui=none       guibg=#031326 guifg=#607093
+hi SignColumn                   gui=none       guibg=#203045 guifg=#607093
 
 hi VertSplit                    gui=none       guibg=#203044 guifg=#000022
 

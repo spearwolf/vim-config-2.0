@@ -3,7 +3,8 @@
 " #==--- dark theme ------- --  -
 set background=dark
 
-colorscheme base16-grayscale-dark
+" colorscheme base16-grayscale-dark
+colorscheme yami
 
 " additional custom color modifications
 hi SignColumn guibg=NONE
@@ -17,4 +18,3 @@ hi LineNr ctermfg=9 guibg=#161616 guifg=#3a3a3a
 " o===)-------- -
 
 let g:airline_theme = 'hybrid'
-
