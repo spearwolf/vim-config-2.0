@@ -36,9 +36,12 @@ let g:enable_bold_font = 1
 " set guifont=Monospace\ 10
 " set linespace=4
 " set linespace=5
+
 " set guifont=Fira\ Mono\ 10
-set guifont=Cascadia\ Code\ 10
-set linespace=6
+" set guifont=Cascadia\ Code\ 10
+
+set guifont=JetBrains\ Mono\ Medium\ 10
+set linespace=5
 
 "set lines=30 columns=105
 " set lines=42 columns=130
@@ -102,7 +105,11 @@ let g:pencil_terminal_italics = 1
 
 " set background=dark
 " colorscheme tender
+" colorscheme onedark
 set background=light
-colorscheme onehalflight
-let g:airline_theme = 'onehalfdark'
+" colorscheme onehalflight
+colorscheme zeroOne-Slash
+
+" let g:airline_theme = 'onehalfdark'
+let g:airline_theme = 'peaksea'
 

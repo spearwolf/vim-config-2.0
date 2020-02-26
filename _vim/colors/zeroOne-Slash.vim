@@ -28,6 +28,7 @@ let s:bg_b              = { "gui": "#bedbd5" }
 let s:bg_c              = { "gui": "#b8d6c9" }
 
 let s:norm              = { "gui": "#445464" }
+let s:norm_light        = { "gui": "#647484" }
 let s:not_norm          = { "gui": "#767676" }
 let s:statement         = { "gui": "#2775ad" }
 let s:identifier        = { "gui": "#000000" }
@@ -198,7 +199,12 @@ hi link jsExportDefault     jsModuleKeywords
 hi link jsArrowFunction     Identifier
 hi link jsStorageClass      Statement
 hi link jsFunction          Statement
+hi link jsVariableType      jsReturn
 hi link jsHtmlElemAttrs     Normal
+hi link jsTemplateString    String
+hi link jsTemplateBrace     String
+call s:h("jsIdentifier",     {"fg": s:norm})
+call s:h("jsIdentifierProp", {"fg": s:norm_light})
 " hi link jsArrowFunction     Statement
 " hi link jsOperator          Normal
 

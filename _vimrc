@@ -42,6 +42,7 @@ Plug 'gorkunov/smartpairs.vim'
 Plug 'mattn/emmet-vim'
 Plug 'sbdchd/neoformat'
 Plug 'junegunn/vim-emoji'
+Plug 'junegunn/goyo.vim'
 
 " language features
 Plug 'tpope/vim-git'
