@@ -107,7 +107,8 @@ set background=dark
 " colorscheme tender
 " colorscheme onedark
 " colorscheme onehalfdark
-colorscheme scheakur
+" colorscheme scheakur
+colorscheme PaperColor
 
 " set background=light
 " colorscheme onehalflight
@@ -116,5 +117,6 @@ colorscheme scheakur
 " let g:airline_theme = 'onehalfdark'
 " let g:airline_theme = 'onehalflight'
 " let g:airline_theme = 'peaksea'
-let g:airline_theme = 'atomic'
+" let g:airline_theme = 'atomic'
+let g:airline_theme = 'ayu_dark'
 
