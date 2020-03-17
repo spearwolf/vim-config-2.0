@@ -19,6 +19,7 @@ let g:ale_sign_warning = '💥'
 
 " New tab Shift-Alt-t
 map <silent> <S-A-t> <Esc>:tabnew<CR>
+" map <silent> <Leader-A-t> <Esc>:tabnew<CR>
 " Wipe tab
 map <silent> <S-A-w> <Esc>:bw!<CR>
 
