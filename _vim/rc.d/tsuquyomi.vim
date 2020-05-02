@@ -12,9 +12,10 @@ let g:tsuquyomi_completion_detail = 0
 autocmd FileType typescript setlocal completeopt+=menu,noinsert
 
 autocmd FileType typescript nmap <buffer> <Leader>r <Plug>(TsuquyomiRenameSymbolC)
+autocmd FileType typescript nmap <buffer> <F2> <Plug>(TsuquyomiRenameSymbolC)
 
 set ballooneval
 autocmd FileType typescript setlocal balloonexpr=tsuquyomi#balloonexpr()
 
 " Integrate with syntastic
-let g:tsuquyomi_disable_quickfix = 1
+" let g:tsuquyomi_disable_quickfix = 1

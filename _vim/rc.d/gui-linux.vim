@@ -104,16 +104,18 @@ let g:pencil_terminal_italics = 1
 " colorscheme PaperColor " one onedark PaperColor
 " let g:airline_theme = 'atomic'
 
-set background=dark
+" set background=dark
 " colorscheme tender
 " colorscheme onedark
 " colorscheme onehalfdark
 " colorscheme scheakur
-colorscheme PaperColor
+" colorscheme PaperColor
 
-" set background=light
+set background=light
 " colorscheme onehalflight
 " colorscheme zeroOne-Slash
+" colorscheme PaperColor
+colorscheme onehalflight
 
 " let g:airline_theme = 'onehalfdark'
 " let g:airline_theme = 'onehalflight'

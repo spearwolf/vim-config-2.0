@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'prettier/vim-prettier'
 
 " Plug 'Shougo/neocomplete.vim'
 " Plug 'ajh17/VimCompletesMe'
@@ -81,6 +82,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'trevordmiller/nova-vim'
 Plug 'jacoborus/tender.vim'
 Plug 'danishprakash/vim-yami'
+Plug 'fcpg/vim-fahrenheit'
 
 " sorted out colorschemes:
 " Plug 'carakan/new-railscasts-theme'

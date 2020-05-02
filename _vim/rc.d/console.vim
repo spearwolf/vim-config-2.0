@@ -1,20 +1,13 @@
 
 set clipboard+=unnamed
 set mouse=
-set number
 
 " #==--- dark colorschemes ------- --  -
 set background=dark
 " set background=light
-" colorscheme jellybeans
-" colorscheme PaperColor
-" colorscheme spacegray
+colorscheme jellybeans
 " colorscheme molokayo
 " colorscheme zeroOne-Dark
-" colorscheme spacegray
-colorscheme alduin
-" colorscheme moonshine
-" colorscheme yami
 
 " let g:airline_theme='jellybeans'
 " let g:airline_theme='powerlineish'
@@ -25,6 +18,6 @@ colorscheme alduin
 " colorscheme one
 
 " let g:airline_theme='one'
-" let g:airline_theme='monochrome'
+let g:airline_theme='jellybeans'
 
 " runtime! rc.d/dark-theme.vim

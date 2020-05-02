@@ -7,9 +7,6 @@ let g:ale_echo_msg_error_str = 'ERROR'
 let g:ale_echo_msg_warning_str = 'WARNING'
 let g:ale_echo_msg_format = '[%linter%][%severity%] %s'
 
-" Set this. Airline will handle the rest.
-" WHY THIS HAS NO EFFECT?
-
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
@@ -26,7 +23,7 @@ let g:ale_completion_enabled = 1
 
 "let g:ale_linters = { 'javascript': ['jshint', 'eslint', 'standard'] }
 "let g:ale_linters = { 'javascript': ['standard'] }
-let g:ale_linters = { 'javascript': ['eslint'], 'javascriptreact': ['eslint'], 'html': ['tidy'], 'css': ['stylelint'], 'typescript': ['tslint', 'tsserver', 'typecheck'] }
+let g:ale_linters = { 'javascript': ['eslint', 'flow-language-server'], 'javascriptreact': ['eslint', 'flow-language-server'], 'html': ['tidy'], 'css': ['stylelint'], 'typescript': ['tsserver', 'typecheck'] }
 
 " let g:ale_fixers = {
 " \   '*': ['trim_whitespace'],

@@ -3,6 +3,8 @@ scriptencoding utf-8
 set encoding=utf-8
 set termencoding=utf-8
 
+set nocompatible
+
 set pyx=3
 set pyxversion=3
 
