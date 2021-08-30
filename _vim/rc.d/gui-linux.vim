@@ -105,12 +105,12 @@ let g:pencil_terminal_italics = 1
 " let g:airline_theme = 'atomic'
 
 set background=dark
-" colorscheme tender
+colorscheme tender
 " colorscheme onedark
 " colorscheme onehalfdark
 " colorscheme scheakur
 " colorscheme PaperColor
-colorscheme xcodewwdc
+" colorscheme xcodewwdc
 
 " set background=light
 " colorscheme onehalflight
@@ -120,9 +120,9 @@ colorscheme xcodewwdc
 
 " let g:airline_theme = 'onehalfdark'
 " let g:airline_theme = 'onehalflight'
-" let g:airline_theme = 'peaksea'
+let g:airline_theme = 'peaksea'
 " let g:airline_theme = 'atomic'
 " let g:airline_theme = 'ayu_dark'
 " let g:airline_theme = 'papercolor'
-let g:airline_theme = 'xcodewwdc'
+" let g:airline_theme = 'xcodewwdc'
 
