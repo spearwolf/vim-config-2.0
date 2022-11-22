@@ -16,6 +16,8 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'prettier/vim-prettier'
+Plug 'wavded/vim-stylus'
+Plug 'wuelnerdotexe/vim-astro'
 
 " Plug 'Shougo/neocomplete.vim'
 " Plug 'ajh17/VimCompletesMe'
@@ -83,6 +85,8 @@ Plug 'trevordmiller/nova-vim'
 Plug 'jacoborus/tender.vim'
 Plug 'Lokaltog/vim-monotone'
 Plug 'arzg/vim-colors-xcode'
+Plug 'sainnhe/sonokai'
+Plug 'srcery-colors/srcery-vim'
 
 " sorted out colorschemes:
 " Plug 'sainnhe/sonokai'

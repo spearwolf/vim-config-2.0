@@ -41,14 +41,14 @@ let g:enable_bold_font = 1
 " set guifont=Fira\ Mono\ 10
 " set guifont=Cascadia\ Code\ 10
 
-set guifont=JetBrains\ Mono\ Medium\ 11
-set linespace=5
+set guifont=JetBrains\ Mono\ Medium\ 12
+set linespace=4
 
 "set lines=30 columns=105
 " set lines=42 columns=130
-set lines=26 columns=120
+set lines=27 columns=128
 
-" #==--- dark colorschemes ------- --  -
+" #==8-- dark colorschemes ------- --  -
 "set background=dark
 "colorscheme molokayo
 "colorscheme zeroOne-Dark
@@ -109,8 +109,10 @@ set background=dark
 " colorscheme onedark
 " colorscheme onehalfdark
 " colorscheme scheakur
-colorscheme PaperColor
+" colorscheme PaperColor
 " colorscheme xcodewwdc
+" colorscheme sonokai
+colorscheme srcery
 
 " set background=light
 " colorscheme onehalflight
@@ -118,11 +120,11 @@ colorscheme PaperColor
 " colorscheme PaperColor
 " colorscheme onehalflight
 
-" let g:airline_theme = 'onehalfdark'
+let g:airline_theme = 'onehalfdark'
 " let g:airline_theme = 'onehalflight'
 " let g:airline_theme = 'peaksea'
 " let g:airline_theme = 'atomic'
 " let g:airline_theme = 'ayu_dark'
-let g:airline_theme = 'papercolor'
+" let g:airline_theme = 'papercolor'
 " let g:airline_theme = 'xcodewwdc'
 

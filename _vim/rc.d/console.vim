@@ -1,4 +1,6 @@
 
+Plug 'tribela/vim-transparent'
+
 set clipboard+=unnamed
 set mouse=
 

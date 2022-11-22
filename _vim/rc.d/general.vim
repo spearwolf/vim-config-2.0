@@ -24,9 +24,9 @@ set nowritebackup
 set noswapfile
 
 " Tab settings
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set smarttab
 
@@ -45,16 +45,13 @@ set linebreak
 set nowrap
 set whichwrap+=h,l,<,>,[,]
 
-"set nolist
-set list
-
 " Better redrawing for large files
 set ttyfast
 
 " Fillchars
 set fillchars+=vert:◦
 "║│░•◆▲▫︎◦
-set list listchars=tab:»·,trail:·
+set nolist listchars=tab:»·,trail:·
 
 " Turn on the mouse, since it doesn't play well with tmux anyway. This way I can
 " scroll in the terminal
